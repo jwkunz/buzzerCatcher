@@ -10829,7 +10829,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CD4043BE-NG"
+		(property "Manufacturer_Part_Number" "CD4043BE"
 			(at 121.92 620.32 0)
 			(effects
 				(font
