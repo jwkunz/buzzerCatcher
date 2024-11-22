@@ -5,6 +5,420 @@
 	(uuid "7ff16773-e8bc-4e88-bf37-0df499448a9a")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:RJ12"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -5.08 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "RJ12"
+				(at 2.54 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0.635 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0.635 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "6P6C RJ socket connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "6P6C* RJ12* RJ18* RJ25*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RJ12_0_1"
+				(polyline
+					(pts
+						(xy -6.35 -1.905) (xy -5.08 -1.905) (xy -5.08 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -0.635) (xy -5.08 -0.635) (xy -5.08 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 0.635) (xy -5.08 0.635) (xy -5.08 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 1.905) (xy -5.08 1.905) (xy -5.08 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 3.175) (xy -5.08 3.175) (xy -5.08 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 4.445) (xy -6.35 4.445) (xy -6.35 4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -4.445) (xy -6.35 6.985) (xy 3.81 6.985) (xy 3.81 4.445) (xy 5.08 4.445) (xy 5.08 3.175)
+						(xy 6.35 3.175) (xy 6.35 -0.635) (xy 5.08 -0.635) (xy 5.08 -1.905) (xy 3.81 -1.905) (xy 3.81 -4.445)
+						(xy -6.35 -4.445) (xy -6.35 -4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 7.62 10.16)
+					(end -7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "RJ12_1_1"
+				(pin passive line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 7.62 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Connector:Screw_Terminal_01x01"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Screw_Terminal_01x01"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "screw terminal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TerminalBlock*:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Screw_Terminal_01x01_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 0.508) (xy 0.508 -0.3302)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:LED"
 			(pin_numbers hide)
 			(pin_names
@@ -3911,6 +4325,213 @@
 				)
 			)
 		)
+		(symbol "SamacSys:TS02-66-60-BK-100-SCR-D"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "IC"
+				(at 26.67 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "TS02-66-60-BK-100-SCR-D"
+				(at 26.67 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "TS026660BK100SCRD"
+				(at 26.67 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.cuidevices.com/product/resource/ts02.pdf"
+				(at 26.67 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Tactile Switches 6 x 6 mm, 6 mm Act Height, 100 gf, Black, Short Crimped, Through Hole, SPST,"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "6.2"
+				(at 26.67 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Same Sky"
+				(at 26.67 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "TS02-66-60-BK-100-SCR-D"
+				(at 26.67 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "179-TS026660BK100SCR"
+				(at 26.67 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Same-Sky/TS02-66-60-BK-100-SCR-D?qs=A6eO%252BMLsxmRCwE7519dLfw%3D%3D"
+				(at 26.67 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Part Number" ""
+				(at 26.67 -894.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Price/Stock" ""
+				(at 26.67 -994.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "TS02-66-60-BK-100-SCR-D_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 25.4 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "NO_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 0 180)
+					(length 5.08)
+					(name "NO_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "COM_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 -2.54 180)
+					(length 5.08)
+					(name "COM_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "SamacSys:USB4130-GF-C"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4433,6 +5054,12 @@
 		)
 	)
 	(junction
+		(at 128.27 219.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "018d4a1c-0708-44fd-95ea-e1839393d02d")
+	)
+	(junction
 		(at 224.79 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4449,6 +5076,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3c97ea34-d558-4a0b-b5b9-86f16d875870")
+	)
+	(junction
+		(at 168.91 219.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "45eb0166-43f1-4ef1-b9e0-f5d7b77edfd2")
 	)
 	(junction
 		(at 26.67 30.48)
@@ -4487,6 +5120,12 @@
 		(uuid "ad61df3c-6fb9-427a-840b-2de556f83af6")
 	)
 	(junction
+		(at 86.36 219.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c660a0d3-5abe-4027-83d9-cc7e4fcee681")
+	)
+	(junction
 		(at 219.71 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4510,6 +5149,12 @@
 		(color 0 0 0 0)
 		(uuid "dccd4a8b-b152-41f0-8708-ad1757426072")
 	)
+	(junction
+		(at 44.45 219.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb3aa3dc-8169-4edf-a790-a5a9d008f6aa")
+	)
 	(no_connect
 		(at 207.01 118.11)
 		(uuid "0003a92a-e670-4abb-adc4-9a71f77d25fd")
@@ -4523,12 +5168,20 @@
 		(uuid "1c3ec926-f156-42bf-b983-73a6ebffc402")
 	)
 	(no_connect
+		(at 224.79 220.98)
+		(uuid "206cd176-72f6-4e4d-9bdc-1f07a61934b3")
+	)
+	(no_connect
 		(at 162.56 38.1)
 		(uuid "2ec9ca09-65f0-44d1-945b-40f7b3573df6")
 	)
 	(no_connect
 		(at 162.56 35.56)
 		(uuid "2f734a51-c4bd-4096-98b4-b84039097ebc")
+	)
+	(no_connect
+		(at 224.79 240.03)
+		(uuid "319214bf-b988-45ad-99d8-a4fd82afd779")
 	)
 	(no_connect
 		(at 125.73 38.1)
@@ -4555,6 +5208,10 @@
 		(uuid "4df73a43-f19e-4914-b3cc-8c19df90ec80")
 	)
 	(no_connect
+		(at 224.79 227.33)
+		(uuid "503c6d54-de13-4cf3-8c24-8cf1c0645851")
+	)
+	(no_connect
 		(at 234.95 120.65)
 		(uuid "70f10fe5-4f96-429d-8917-8d6c1bc6cb5b")
 	)
@@ -4565,6 +5222,10 @@
 	(no_connect
 		(at 125.73 27.94)
 		(uuid "84bcbfaa-11c9-477b-bc65-b1a1b5caaf2b")
+	)
+	(no_connect
+		(at 224.79 233.68)
+		(uuid "9fea6c1f-dfe1-4763-a084-e1ef643a8494")
 	)
 	(no_connect
 		(at 162.56 27.94)
@@ -4587,6 +5248,10 @@
 		(uuid "beeb12af-7939-4681-aa42-03333270aa1e")
 	)
 	(no_connect
+		(at 109.22 187.96)
+		(uuid "cb71ecb4-5e5e-476e-b635-39a07b797a1c")
+	)
+	(no_connect
 		(at 95.25 40.64)
 		(uuid "ccf02b65-39d7-45c0-bef7-fae49d48a456")
 	)
@@ -4601,6 +5266,10 @@
 	(no_connect
 		(at 162.56 33.02)
 		(uuid "ef79b030-aead-46a9-b677-f8b4b1d55b21")
+	)
+	(no_connect
+		(at 78.74 187.96)
+		(uuid "f3ca143d-c601-4f5b-b830-71be7e2254bb")
 	)
 	(no_connect
 		(at 234.95 128.27)
@@ -4676,6 +5345,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 219.71) (xy 44.45 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11748e6b-98c6-4e75-af78-30b6c7d72948")
+	)
+	(wire
+		(pts
 			(xy 96.52 102.87) (xy 96.52 146.05)
 		)
 		(stroke
@@ -4713,6 +5392,16 @@
 			(type default)
 		)
 		(uuid "178e85d0-6777-4c5d-8b7f-6ffba1494b08")
+	)
+	(wire
+		(pts
+			(xy 62.23 233.68) (xy 62.23 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18a75f22-7acd-4c29-913e-e5ba65892a7d")
 	)
 	(wire
 		(pts
@@ -4766,6 +5455,26 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 233.68) (xy 62.23 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ea4ffa3-9ef2-4520-9194-2a9ca2f73871")
+	)
+	(wire
+		(pts
+			(xy 86.36 229.87) (xy 93.98 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22616882-7cc1-4c86-bdae-1a9fb868b6f2")
+	)
+	(wire
+		(pts
 			(xy 59.69 33.02) (xy 63.5 33.02)
 		)
 		(stroke
@@ -4816,6 +5525,16 @@
 	)
 	(wire
 		(pts
+			(xy 62.23 219.71) (xy 59.69 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31209800-8c99-4edf-a35b-c1b0832be3f3")
+	)
+	(wire
+		(pts
 			(xy 21.59 127) (xy 36.83 127)
 		)
 		(stroke
@@ -4843,6 +5562,16 @@
 			(type default)
 		)
 		(uuid "3942ed41-c4e5-443f-b9ee-db7dd86052a0")
+	)
+	(wire
+		(pts
+			(xy 186.69 219.71) (xy 184.15 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b934ad0-7283-4742-abc6-89eb402990c1")
 	)
 	(wire
 		(pts
@@ -4926,6 +5655,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 229.87) (xy 52.07 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "503f3eff-0aef-4203-9c1a-b58fe2d20648")
+	)
+	(wire
+		(pts
 			(xy 85.09 127) (xy 85.09 76.2)
 		)
 		(stroke
@@ -4936,6 +5675,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 190.5) (xy 130.81 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54773640-0bc3-4b40-b425-d1c049430e92")
+	)
+	(wire
+		(pts
 			(xy 80.01 71.12) (xy 147.32 71.12)
 		)
 		(stroke
@@ -4943,6 +5692,16 @@
 			(type default)
 		)
 		(uuid "5780e6ec-7bb4-4022-b60b-0703a9677633")
+	)
+	(wire
+		(pts
+			(xy 96.52 233.68) (xy 104.14 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a2af9ec-f5b0-4be5-a0e7-fdfbc1f0a0b9")
 	)
 	(wire
 		(pts
@@ -4976,6 +5735,16 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 229.87) (xy 176.53 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "632bbf0f-d2a7-4fbe-811f-059f3a48299e")
+	)
+	(wire
+		(pts
 			(xy 68.58 33.02) (xy 63.5 33.02)
 		)
 		(stroke
@@ -4983,6 +5752,16 @@
 			(type default)
 		)
 		(uuid "634ca76c-3b4a-41d9-8542-d308ed552a15")
+	)
+	(wire
+		(pts
+			(xy 52.07 254) (xy 52.07 255.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64c8acd6-c031-440d-9a3f-c31bbcb3c27f")
 	)
 	(wire
 		(pts
@@ -5056,6 +5835,26 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 229.87) (xy 52.07 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "734c75b3-0008-450d-bc7f-b60e9157ba49")
+	)
+	(wire
+		(pts
+			(xy 176.53 254) (xy 176.53 255.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "774dff84-31e1-47af-af46-35049821849b")
+	)
+	(wire
+		(pts
 			(xy 87.63 144.78) (xy 87.63 78.74)
 		)
 		(stroke
@@ -5126,6 +5925,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 254) (xy 93.98 255.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83caffad-30a0-482c-829e-344bd59bc1ed")
+	)
+	(wire
+		(pts
 			(xy 219.71 73.66) (xy 254 73.66)
 		)
 		(stroke
@@ -5143,6 +5952,16 @@
 			(type default)
 		)
 		(uuid "87b09573-bcb4-445f-b4cb-07c08b6f6d10")
+	)
+	(wire
+		(pts
+			(xy 133.35 219.71) (xy 128.27 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88f406d3-544e-49b5-8d1b-902ef4c6daf1")
 	)
 	(wire
 		(pts
@@ -5186,6 +6005,56 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 233.68) (xy 146.05 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96330749-55f2-4de4-8fbc-9ddb82e340bb")
+	)
+	(wire
+		(pts
+			(xy 138.43 233.68) (xy 146.05 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9669c9e4-a3bd-490c-9fa5-7ee708d06194")
+	)
+	(wire
+		(pts
+			(xy 179.07 233.68) (xy 186.69 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "988c70b9-b654-4660-b8d1-3d52eadcd8ef")
+	)
+	(wire
+		(pts
+			(xy 135.89 229.87) (xy 135.89 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "989a405f-fdd7-4b4f-ab63-bb1547b4f4a3")
+	)
+	(wire
+		(pts
+			(xy 135.89 254) (xy 135.89 255.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a75920d-35cb-4e23-b1d6-cca121f8084b")
+	)
+	(wire
+		(pts
 			(xy 241.3 146.05) (xy 241.3 149.86)
 		)
 		(stroke
@@ -5206,6 +6075,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 219.71) (xy 168.91 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e278e3b-697f-4b24-854e-dae3ef8f68b1")
+	)
+	(wire
+		(pts
 			(xy 156.21 146.05) (xy 156.21 153.67)
 		)
 		(stroke
@@ -5213,6 +6092,16 @@
 			(type default)
 		)
 		(uuid "9e81035b-93a4-4ff5-b520-4e92dbd4a4a0")
+	)
+	(wire
+		(pts
+			(xy 49.53 219.71) (xy 44.45 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f0ea0a9-e71c-45e0-a56c-02d83664f520")
 	)
 	(wire
 		(pts
@@ -5266,6 +6155,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 229.87) (xy 93.98 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aed4d2b8-aadf-4c6c-bb84-3e3bcf74cec1")
+	)
+	(wire
+		(pts
 			(xy 147.32 81.28) (xy 146.05 81.28)
 		)
 		(stroke
@@ -5316,6 +6215,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 229.87) (xy 176.53 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b84d946f-221f-4387-83ee-60116911c2ea")
+	)
+	(wire
+		(pts
 			(xy 21.59 38.1) (xy 21.59 127)
 		)
 		(stroke
@@ -5323,6 +6232,16 @@
 			(type default)
 		)
 		(uuid "bb95d279-6c2d-4db5-8fc4-64e7f238f3dc")
+	)
+	(wire
+		(pts
+			(xy 128.27 219.71) (xy 128.27 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcdad61e-dada-4c93-9d8a-019895696885")
 	)
 	(wire
 		(pts
@@ -5343,6 +6262,26 @@
 			(type default)
 		)
 		(uuid "c0198260-266e-4121-9e5e-bdcbf5c12d01")
+	)
+	(wire
+		(pts
+			(xy 104.14 233.68) (xy 104.14 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1befba4-0fd6-4e5e-aab8-9998153f1ebf")
+	)
+	(wire
+		(pts
+			(xy 128.27 229.87) (xy 135.89 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3b05021-6bc6-45e9-ac14-da3706bbef74")
 	)
 	(wire
 		(pts
@@ -5383,6 +6322,16 @@
 			(type default)
 		)
 		(uuid "ca7715b1-6941-4efc-8cb0-34120aa3d7fe")
+	)
+	(wire
+		(pts
+			(xy 86.36 219.71) (xy 86.36 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb2a5c7a-bf8a-4393-b7dc-1cf140e0128c")
 	)
 	(wire
 		(pts
@@ -5486,6 +6435,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 219.71) (xy 143.51 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e266845b-f997-41b1-be91-eab0d7f633d5")
+	)
+	(wire
+		(pts
 			(xy 203.2 143.51) (xy 210.82 143.51)
 		)
 		(stroke
@@ -5503,6 +6462,16 @@
 			(type default)
 		)
 		(uuid "e575560c-175b-4ebf-8da3-dd72b9c05209")
+	)
+	(wire
+		(pts
+			(xy 186.69 233.68) (xy 186.69 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5ef825f-127e-49d9-881f-668f50f492f2")
 	)
 	(wire
 		(pts
@@ -5533,6 +6502,16 @@
 			(type default)
 		)
 		(uuid "e761b7ca-490d-44a7-a277-821f8cfe5ac5")
+	)
+	(wire
+		(pts
+			(xy 104.14 219.71) (xy 101.6 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8266d72-fc95-4100-b1eb-a6a6d9b41b32")
 	)
 	(wire
 		(pts
@@ -5596,6 +6575,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 219.71) (xy 86.36 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3ca52fc-b321-4d8b-9210-6ce979322aa4")
+	)
+	(wire
+		(pts
 			(xy 59.69 49.53) (xy 20.32 49.53)
 		)
 		(stroke
@@ -5623,6 +6612,16 @@
 			(type default)
 		)
 		(uuid "fc2935fd-a2ed-4321-9738-2c529954c5bc")
+	)
+	(wire
+		(pts
+			(xy 173.99 219.71) (xy 168.91 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc58e799-9a17-4a84-ac3c-a1dc84f9a8c7")
 	)
 	(wire
 		(pts
@@ -5663,6 +6662,16 @@
 			)
 		)
 		(uuid "57b2e106-1964-4b62-b416-cf2d90e411d2")
+	)
+	(text "Components for handle\n"
+		(exclude_from_sim no)
+		(at 49.022 214.122 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "aba51de9-4949-40f9-a455-6c70312d65a9")
 	)
 	(text "Reset Button\n"
 		(exclude_from_sim no)
@@ -5707,17 +6716,6 @@
 		)
 		(uuid "04097842-1a4c-4492-a420-8fa03874dd78")
 	)
-	(label "Vbus_5V"
-		(at 36.83 124.46 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "07e69ee0-25b6-422e-9cbb-48d170523959")
-	)
 	(label "trigger_4"
 		(at 57.15 144.78 0)
 		(fields_autoplaced yes)
@@ -5728,17 +6726,6 @@
 			(justify left bottom)
 		)
 		(uuid "0c90f4f4-20a9-4479-ab97-861e98cb000a")
-	)
-	(label "Vbus_5V"
-		(at 36.83 88.9 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "24eb26b6-983c-4e88-8d51-62b257e35dba")
 	)
 	(label "Vbus_5V"
 		(at 234.95 113.03 0)
@@ -5796,17 +6783,6 @@
 		(uuid "3eaa9d1f-f162-4114-a5eb-d4edbcc0c456")
 	)
 	(label "Vbus_5V"
-		(at 36.83 142.24 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4211fa81-c087-4aa5-89b4-6f79a53dd930")
-	)
-	(label "Vbus_5V"
 		(at 162.56 43.18 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5840,7 +6816,7 @@
 		(uuid "695c0e06-23c8-4bb9-b1b7-7601b1517665")
 	)
 	(label "Vbus_5V"
-		(at 83.82 182.88 180)
+		(at 78.74 190.5 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5928,7 +6904,7 @@
 		(uuid "9d2d9480-6009-4ae3-b6cc-2e8bdf7b4a2d")
 	)
 	(label "reset_button"
-		(at 93.98 182.88 0)
+		(at 109.22 190.5 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6037,17 +7013,6 @@
 		)
 		(uuid "eeb21820-5d49-4860-9957-c943b046353b")
 	)
-	(label "Vbus_5V"
-		(at 36.83 106.68 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f362ce54-383b-4d4e-8e38-cab39eb713b8")
-	)
 	(label "listening"
 		(at 68.58 33.02 0)
 		(fields_autoplaced yes)
@@ -6139,6 +7104,139 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 71.12 219.71 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "092fbddf-3a13-47ef-b549-b5e1eb2381d3")
+		(property "Reference" "#PWR043"
+			(at 64.77 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ddd206ab-aec6-4c20-9e98-28259439b016")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 179.07 254 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "099506aa-5132-4131-bb48-b775e073e5f0")
+		(property "Reference" "#PWR057"
+			(at 185.42 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 182.88 253.9999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 179.07 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c6aad0fb-aa19-4894-a8a2-072dc1ea4582")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 36.83 179.07 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6199,6 +7297,264 @@
 			(project ""
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 52.07 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0cd91042-a7f5-4187-bf8f-66321195d483")
+		(property "Reference" "R10"
+			(at 54.61 265.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "300"
+			(at 54.61 267.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.292 266.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 52.07 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 52.07 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MFR-25FTE52-300R"
+			(at 52.07 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 52.07 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0b3fcda0-1bc4-452d-9620-7ce44286064a")
+		)
+		(pin "2"
+			(uuid "68080592-fe3f-4ff9-aba9-b996684d0d31")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys:154-UL6661")
+		(at 133.35 254 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1110189f-677a-4372-96a7-1705d7a4bbd1")
+		(property "Reference" "J8"
+			(at 125.73 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "154-UL6661"
+			(at 128.27 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.27 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/449/KC-300616-1212190.pdf"
+			(at 328.27 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Modular Connectors / Ethernet Connectors JACK PCB 6P-6C BLK"
+			(at 133.35 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "15.875"
+			(at 528.27 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Kobiconn"
+			(at 628.27 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "154-UL6661"
+			(at 728.27 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "154-UL6661"
+			(at 828.27 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Kobiconn/154-UL6661?qs=olhD%252BKI%2Fybo0R6DqQv4X2A%3D%3D"
+			(at 928.27 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 1028.27 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 1128.27 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 133.35 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "32975036-c060-42ef-bd3e-3afe60075c1d")
+		)
+		(pin "2"
+			(uuid "479d8e46-d6f3-49a6-b1ac-db5762b17d54")
+		)
+		(pin "1"
+			(uuid "fbf76ddc-b04b-4fd8-a60d-4c34aba1dcf1")
+		)
+		(pin "6"
+			(uuid "c9d02b50-b194-4836-8fb9-248e04f9c71e")
+		)
+		(pin "3"
+			(uuid "9a2f559f-cd2a-4314-806d-3a954bf41f60")
+		)
+		(pin "5"
+			(uuid "03790108-39ec-4ce1-975c-19fba638cfb6")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -6354,6 +7710,298 @@
 			(project ""
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 176.53 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "16406151-60fd-4acb-84df-8b9a0c63d6e9")
+		(property "Reference" "R16"
+			(at 179.07 265.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "300"
+			(at 179.07 267.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 174.752 266.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 176.53 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 176.53 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MFR-25FTE52-300R"
+			(at 176.53 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 176.53 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "461190ec-d60c-4605-a874-1ca1d8cbce28")
+		)
+		(pin "2"
+			(uuid "a4725364-d563-4c1a-a1b8-d75ad6d8ce4d")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:RJ12")
+		(at 255.27 287.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1771ddb5-e94a-46ca-a36c-489c42574df7")
+		(property "Reference" "J17"
+			(at 255.27 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "25 ft RJ12"
+			(at 255.27 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 286.385 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 255.27 286.385 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+			(at 255.27 287.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "BC-66SS025F"
+			(at 255.27 287.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 255.27 287.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d5fad777-5dca-4974-9883-7ad297e792c8")
+		)
+		(pin "4"
+			(uuid "0a62c491-c64b-47c1-9f84-ab55396ce01e")
+		)
+		(pin "5"
+			(uuid "b33af862-32a8-4c94-b18c-de0368fbfba8")
+		)
+		(pin "2"
+			(uuid "ba87c106-2184-4147-9724-8c0bbb0f847a")
+		)
+		(pin "6"
+			(uuid "05bb3d3b-1507-4fb7-9648-cc2e07d0c90b")
+		)
+		(pin "3"
+			(uuid "cdd4a28a-b62f-469f-8950-05b00a3ab383")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "J17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 74.93 219.71 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1a0272ef-c4c1-41b1-8e7a-86251ce8b056")
+		(property "Reference" "R11"
+			(at 76.2001 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "300"
+			(at 73.6601 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 217.932 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 74.93 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 74.93 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 74.93 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MFR-25FTE52-300R"
+			(at 74.93 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 74.93 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1323b7b9-b8fa-4d40-9964-870b82125da9")
+		)
+		(pin "2"
+			(uuid "50d6b9d6-9afd-4042-870b-c1d9ea2cc358")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -6936,6 +8584,151 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 133.35 254 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c515c89-81cf-4832-bef8-d1373e2ac7ad")
+		(property "Reference" "#PWR050"
+			(at 127 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 129.54 253.9999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 133.35 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ff88b394-4348-4569-8c98-75053624589a")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 179.07 219.71 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c7492fd-8aef-4d8f-b6b0-19910846a81a")
+		(property "Reference" "SW4"
+			(at 179.07 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 179.07 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 179.07 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "PV5S64019"
+			(at 179.07 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2512c06c-f352-4da5-9905-a72d44dbfd60")
+		)
+		(pin "2"
+			(uuid "856ac2d8-0e3b-44b6-a538-31f377fd5d85")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 34.29 40.64 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6995,6 +8788,72 @@
 			(project "buzzCatcher"
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 153.67 219.71 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2da49c23-fd32-4782-b4b3-5242003bfec9")
+		(property "Reference" "#PWR053"
+			(at 147.32 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 148.59 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 153.67 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b60e1ebd-84e9-4947-9f48-f85697e0b3b1")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -7068,6 +8927,167 @@
 		)
 	)
 	(symbol
+		(lib_id "SamacSys:154-UL6661")
+		(at 49.53 254 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31cee1b2-0419-4e7d-87c0-fa462176895e")
+		(property "Reference" "J6"
+			(at 41.91 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "154-UL6661"
+			(at 44.45 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.45 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/449/KC-300616-1212190.pdf"
+			(at 244.45 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Modular Connectors / Ethernet Connectors JACK PCB 6P-6C BLK"
+			(at 49.53 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "15.875"
+			(at 444.45 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Kobiconn"
+			(at 544.45 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "154-UL6661"
+			(at 644.45 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "154-UL6661"
+			(at 744.45 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Kobiconn/154-UL6661?qs=olhD%252BKI%2Fybo0R6DqQv4X2A%3D%3D"
+			(at 844.45 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 944.45 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 1044.45 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 49.53 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "d5924710-0373-47a1-8d1b-24ac9ebc4941")
+		)
+		(pin "2"
+			(uuid "24ddc221-2346-492c-9dad-67e20146efb4")
+		)
+		(pin "1"
+			(uuid "e350968e-3dad-4bfc-9109-694798069c39")
+		)
+		(pin "6"
+			(uuid "0f5a9f80-49f6-49b7-9d83-a8de32c26d6a")
+		)
+		(pin "3"
+			(uuid "8febcd37-e00f-41eb-8d64-afabb540d51c")
+		)
+		(pin "5"
+			(uuid "c78c9909-036b-4512-b550-e54aec7c04dc")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 115.57 140.97 270)
 		(unit 1)
@@ -7129,6 +9149,490 @@
 			(project ""
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 93.98 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "333bd3b3-6371-4848-87aa-de28ab280c4c")
+		(property "Reference" "R12"
+			(at 96.52 265.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "300"
+			(at 96.52 267.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.202 266.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 93.98 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 93.98 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MFR-25FTE52-300R"
+			(at 93.98 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 93.98 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bf235a43-9f24-4407-a15f-f0b1505f0d7e")
+		)
+		(pin "2"
+			(uuid "33090647-8b82-4036-a51a-6235ffbe73c6")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 54.61 219.71 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "35f86537-e339-415e-860d-6fdf34fbdc2a")
+		(property "Reference" "SW1"
+			(at 54.61 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 54.61 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 54.61 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "PV5S64019"
+			(at 54.61 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b70a571c-be8c-4d59-a456-184cd7e9287f")
+		)
+		(pin "2"
+			(uuid "e5d1ff04-6629-49ea-be8a-03eb1260a380")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 173.99 254 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "362ad294-3ad4-4160-b155-44147af69203")
+		(property "Reference" "#PWR055"
+			(at 167.64 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 170.18 253.9999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 173.99 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "290b066b-8236-4d24-922d-93053bada6ec")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 40.64 219.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38e47d08-324a-4917-bdea-0dc34fc975ea")
+		(property "Reference" "D6"
+			(at 40.3226 223.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 37.7826 223.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 40.64 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 40.64 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Cree LED"
+			(at 40.64 219.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C4SMA-RGY-CS4V1BB1"
+			(at 40.64 219.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 40.64 219.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "40fc7ec7-6cf3-4de9-bf7c-1e8ee5cb4dd8")
+		)
+		(pin "2"
+			(uuid "24c8e1b1-7ee6-46a0-83c6-cd14945c5976")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 36.83 124.46 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d50d26b-8c0c-476e-b56a-902a7f193aae")
+		(property "Reference" "#PWR040"
+			(at 30.48 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 33.02 124.4599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 36.83 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "055c877b-37ad-4b34-a5c0-f058863d9e81")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 138.43 219.71 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3e8f109d-2537-4380-ab0c-f40b1c3e3195")
+		(property "Reference" "SW3"
+			(at 138.43 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 138.43 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 138.43 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "PV5S64019"
+			(at 138.43 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ff81f7bc-3bac-4ea8-b9cd-429b56e106bc")
+		)
+		(pin "2"
+			(uuid "909431b8-1f6d-43fe-bc5e-2dcc429137cf")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -7521,6 +10025,171 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 91.44 233.68 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "45c35ef6-6321-41ee-a815-ab59ee9d00ec")
+		(property "Reference" "#PWR044"
+			(at 85.09 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 87.63 233.6799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 91.44 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ad579dfa-7e19-4c21-879e-9dc375ce257b")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:RJ12")
+		(at 232.41 261.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "467e5009-227b-4f49-b0f1-ff59273c0bf5")
+		(property "Reference" "J14"
+			(at 232.41 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "25 ft RJ12"
+			(at 232.41 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 260.985 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 232.41 260.985 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+			(at 232.41 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "BC-66SS025F"
+			(at 232.41 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 232.41 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c3535d96-67b2-41f0-9877-24d996dc3c1a")
+		)
+		(pin "4"
+			(uuid "51b6af9a-2eae-4911-b15f-12362c3b4184")
+		)
+		(pin "5"
+			(uuid "3ec5ca7f-1b41-4aeb-a897-23c5bf585962")
+		)
+		(pin "2"
+			(uuid "79a01a86-e655-47af-8b8e-740d4e820633")
+		)
+		(pin "6"
+			(uuid "479e4837-ee38-462d-8bf0-6469c73fb413")
+		)
+		(pin "3"
+			(uuid "9ab4a070-afde-4218-8a2a-932e880a039b")
+		)
+		(instances
+			(project ""
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "J14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 146.05 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7580,6 +10249,157 @@
 			(project "buzzCatcher"
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x01")
+		(at 229.87 220.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48ee27bf-5fc5-4176-abac-3cf53d7f9261")
+		(property "Reference" "J10"
+			(at 232.41 219.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M5 Screw"
+			(at 232.41 222.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 229.87 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "50M050080J008"
+			(at 229.87 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 229.87 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d2e16d03-e057-43b5-afea-f64ab2b542b6")
+		)
+		(instances
+			(project ""
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 93.98 270.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4926ffb5-b769-45fe-8e42-bbf50acd84c7")
+		(property "Reference" "#PWR046"
+			(at 93.98 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 93.98 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 93.98 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a9c022cf-1ffb-4d01-bf66-cb71989f360f")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -7761,6 +10581,73 @@
 			(project ""
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "IC3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 138.43 254 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d9b6048-3027-49c2-a0f4-7b1261c3aeff")
+		(property "Reference" "#PWR052"
+			(at 144.78 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 142.24 253.9999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 138.43 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "167334ef-ab68-46b4-8f2b-7f3292d2bc29")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -8088,6 +10975,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 52.07 270.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59b4934f-075a-455c-b02b-c6d83e2848ed")
+		(property "Reference" "#PWR036"
+			(at 52.07 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 52.07 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 52.07 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4c6d14ac-202d-4ea6-84a0-85d616c1b84e")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 57.15 88.9 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8242,6 +11195,170 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 49.53 254 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "648279cc-fadd-4f01-b461-062922a64c6b")
+		(property "Reference" "#PWR037"
+			(at 43.18 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 253.9999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 49.53 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "707445e1-86be-4265-b75c-c5011bb2e2ab")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 93.98 259.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "65b20ff5-975a-4213-ae6c-79391a32781c")
+		(property "Reference" "D9"
+			(at 97.79 259.3974 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 97.79 261.9374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 93.98 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Cree LED"
+			(at 93.98 259.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C4SMA-RGY-CS4V1BB1"
+			(at 93.98 259.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 93.98 259.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9d6087cb-1f23-4475-9494-be01e1588b0f")
+		)
+		(pin "2"
+			(uuid "ec1488e3-be92-423c-9238-014f629fd8d2")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SamacSys:ECW-H16362RJV")
 		(at 146.05 161.29 90)
 		(unit 1)
@@ -8378,6 +11495,104 @@
 			(project "buzzCatcher"
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:RJ12")
+		(at 255.27 261.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66c8c19d-8981-477a-a26a-58c72391804a")
+		(property "Reference" "J15"
+			(at 255.27 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "25 ft RJ12"
+			(at 255.27 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 260.985 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 255.27 260.985 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+			(at 255.27 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "BC-66SS025F"
+			(at 255.27 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 255.27 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "45281220-7095-4ee6-bf2d-c576bd862683")
+		)
+		(pin "4"
+			(uuid "d1a4fd25-ee4d-4e50-a341-fd088d04dd44")
+		)
+		(pin "5"
+			(uuid "9c761206-87c0-4da1-a542-79abb4aba78d")
+		)
+		(pin "2"
+			(uuid "147e2d16-6342-4ca3-b0c4-c3f1c0370017")
+		)
+		(pin "6"
+			(uuid "d9b7e873-c384-444e-b827-ea03e7646e11")
+		)
+		(pin "3"
+			(uuid "310b55ed-ce4d-4765-a126-f70d7ef6bac6")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "J15")
 					(unit 1)
 				)
 			)
@@ -8532,6 +11747,288 @@
 			(project "buzzCatcher"
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 130.81 186.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77096f17-2e51-47ae-9fc1-3f0cfd7fe960")
+		(property "Reference" "R8"
+			(at 133.35 185.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "110k"
+			(at 133.35 187.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 129.032 186.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 130.81 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connetivity"
+			(at 130.81 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" " LR0204F100K"
+			(at 130.81 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a1c4ea93-1f29-4b90-b91e-058cf0affbbe")
+		)
+		(pin "1"
+			(uuid "2b55e7db-5c97-4a3f-ad6b-7347850d0f52")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 135.89 259.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a12f964-d5ae-4364-94de-60cb074b85a7")
+		(property "Reference" "D11"
+			(at 139.7 259.3974 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 139.7 261.9374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 135.89 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Cree LED"
+			(at 135.89 259.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C4SMA-RGY-CS4V1BB1"
+			(at 135.89 259.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 135.89 259.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f201fd25-41ab-445f-83e0-0fe0ff7a367c")
+		)
+		(pin "2"
+			(uuid "eae9fb4c-4f98-412f-a1b6-59d28c327ce9")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 157.48 219.71 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a7e8855-2eab-4d74-85da-b9da99de4d0a")
+		(property "Reference" "R15"
+			(at 158.7501 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "300"
+			(at 156.2101 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 217.932 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 157.48 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 157.48 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MFR-25FTE52-300R"
+			(at 157.48 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 157.48 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6bfe2c19-eac2-4437-92c0-406125ceb116")
+		)
+		(pin "2"
+			(uuid "307601b6-3a54-4b96-9552-0c13b349bb30")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -8747,6 +12244,104 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:RJ12")
+		(at 232.41 287.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d9a0f26-4736-4cd6-8032-8830114e43ed")
+		(property "Reference" "J16"
+			(at 232.41 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "25 ft RJ12"
+			(at 232.41 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 286.385 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 232.41 286.385 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+			(at 232.41 287.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "BC-66SS025F"
+			(at 232.41 287.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 232.41 287.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ac300f9-376a-43ca-9288-ecaed57f8576")
+		)
+		(pin "4"
+			(uuid "ff351a6c-1133-4fcc-91fe-cf959a85d12d")
+		)
+		(pin "5"
+			(uuid "4c08c64d-bac6-4a7c-a731-fcc6222344f9")
+		)
+		(pin "2"
+			(uuid "651fcd87-e9c1-4694-b25d-c6b6057c8d54")
+		)
+		(pin "6"
+			(uuid "6565f30e-2d9e-45b4-ab36-6984de34e0bb")
+		)
+		(pin "3"
+			(uuid "3c54a012-5bba-4aa0-91ba-e9c3ea4b2f12")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "J16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 24.13 189.23 0)
 		(unit 1)
@@ -8807,6 +12402,139 @@
 			(project "buzzCatcher"
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 113.03 219.71 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7de67141-af5a-4a0f-a953-79c522089921")
+		(property "Reference" "#PWR048"
+			(at 106.68 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 107.95 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 113.03 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1f05c73b-edf8-44a3-811a-e760c3e1bdf5")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 54.61 254 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8216cf49-05b8-40bb-b434-5e68fcbf43ec")
+		(property "Reference" "#PWR038"
+			(at 60.96 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 58.42 253.9999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 54.61 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6869a234-4acc-454c-89f3-3beeaa481739")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -8967,6 +12695,234 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 36.83 142.24 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "846d304f-68aa-4f09-b3f0-0d8884589ec6")
+		(property "Reference" "#PWR039"
+			(at 30.48 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 33.02 142.2399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 36.83 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "52508f9a-747b-4c4d-aff1-e139d8cb289e")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys:154-UL6661")
+		(at 91.44 254 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8588c254-b4ca-4c07-9ee4-43b212c94623")
+		(property "Reference" "J7"
+			(at 83.82 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "154-UL6661"
+			(at 86.36 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.36 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/449/KC-300616-1212190.pdf"
+			(at 286.36 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Modular Connectors / Ethernet Connectors JACK PCB 6P-6C BLK"
+			(at 91.44 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "15.875"
+			(at 486.36 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Kobiconn"
+			(at 586.36 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "154-UL6661"
+			(at 686.36 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "154-UL6661"
+			(at 786.36 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Kobiconn/154-UL6661?qs=olhD%252BKI%2Fybo0R6DqQv4X2A%3D%3D"
+			(at 886.36 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 986.36 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 1086.36 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 91.44 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "3d4cea18-4dbf-4fae-81e1-5d6e4dccddb9")
+		)
+		(pin "2"
+			(uuid "dc68ca4e-13ee-443b-b4d2-87c46d978401")
+		)
+		(pin "1"
+			(uuid "871fbe60-11b6-496e-bc48-7537cea067eb")
+		)
+		(pin "6"
+			(uuid "2e595d46-de92-4d9e-94a4-f6fd7e9d76eb")
+		)
+		(pin "3"
+			(uuid "3f6143fd-b842-41ab-8a57-1e9b3838a510")
+		)
+		(pin "5"
+			(uuid "6cc84515-030e-4cee-81f5-bd59dbd8a9ea")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SamacSys:154-UL6661")
 		(at 36.83 142.24 0)
 		(unit 1)
@@ -9119,6 +13075,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 124.46 219.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86b73d5a-acfb-4156-a795-a20b4a6b56b6")
+		(property "Reference" "D10"
+			(at 124.1426 223.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 121.6026 223.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 124.46 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Cree LED"
+			(at 124.46 219.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C4SMA-RGY-CS4V1BB1"
+			(at 124.46 219.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 124.46 219.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "37a8f825-b9a0-48cc-bc81-0031733b7673")
+		)
+		(pin "2"
+			(uuid "8eda5031-3ef9-4592-848d-75004c0be1f2")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 267.97 111.76 0)
 		(unit 1)
@@ -9207,34 +13260,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 88.9 182.88 0)
-		(mirror x)
+		(lib_id "power:GND")
+		(at 36.83 106.68 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8c1b612a-9fc8-4d1d-b759-ac3b0b298380")
-		(property "Reference" "SW1"
-			(at 88.9 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 88.9 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal"
-			(at 88.9 187.96 0)
+		(uuid "88de785d-26ea-42f4-8407-1e1a613015b8")
+		(property "Reference" "#PWR041"
+			(at 30.48 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9242,8 +13278,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 88.9 187.96 0)
+		(property "Value" "GND"
+			(at 33.02 106.6799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9251,8 +13296,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 88.9 182.88 0)
+		(property "Datasheet" ""
+			(at 36.83 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9260,8 +13305,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "PV5S64019"
-			(at 88.9 182.88 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 36.83 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9270,15 +13315,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "079fad46-6fe7-4690-8241-d5aa2465739f")
-		)
-		(pin "2"
-			(uuid "eb091a3d-8433-450d-ae78-f0c8d9a969fe")
+			(uuid "d9f63636-51fc-4985-a108-4ee6edfe62f1")
 		)
 		(instances
-			(project ""
+			(project "buzzCatcher"
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
-					(reference "SW1")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -9522,6 +13564,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 52.07 259.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "925770f6-c11a-4488-8e7e-5a82b370b209")
+		(property "Reference" "D7"
+			(at 55.88 259.3974 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 55.88 261.9374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 52.07 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Cree LED"
+			(at 52.07 259.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C4SMA-RGY-CS4V1BB1"
+			(at 52.07 259.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 52.07 259.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cdfc2764-f223-4513-963a-be370e204152")
+		)
+		(pin "2"
+			(uuid "609b77fa-716b-4e3f-b9db-6cbb737a771b")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 36.83 111.76 270)
 		(unit 1)
@@ -9583,6 +13722,103 @@
 			(project "buzzCatcher"
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 116.84 219.71 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "92d63fdd-5c71-409e-8405-46c51bce8bc1")
+		(property "Reference" "R13"
+			(at 118.1101 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "300"
+			(at 115.5701 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 217.932 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 116.84 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 116.84 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MFR-25FTE52-300R"
+			(at 116.84 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 116.84 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5982d01-8b1a-4285-b832-886016bba0f2")
+		)
+		(pin "2"
+			(uuid "c3b7e4e7-3ef6-4cac-9691-fdd03cbf926a")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -9805,6 +14041,73 @@
 			(project ""
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 36.83 88.9 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "981c969d-4551-4bb1-be8d-604c3145ab4c")
+		(property "Reference" "#PWR042"
+			(at 30.48 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 33.02 88.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 36.83 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3cf8c769-760a-4ddb-8aae-79dd767addef")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -10095,6 +14398,170 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 176.53 259.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9cebe19b-9581-4f3b-ab6f-3173daa68ebe")
+		(property "Reference" "D13"
+			(at 180.34 259.3974 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 180.34 261.9374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 176.53 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Cree LED"
+			(at 176.53 259.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C4SMA-RGY-CS4V1BB1"
+			(at 176.53 259.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 176.53 259.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "091a3a36-f5be-4477-bd78-0b4dedc12857")
+		)
+		(pin "2"
+			(uuid "03ef0212-9099-4bc2-b5d2-212b8e173903")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 96.52 254 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e76f2e6-16b9-4636-8169-a924e0abaa43")
+		(property "Reference" "#PWR047"
+			(at 102.87 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 100.33 253.9999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 96.52 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "54468792-2ddf-45ac-ae4a-4171248d72fe")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 173.99 68.58 90)
 		(mirror x)
@@ -10224,6 +14691,254 @@
 			(project "buzzCatcher"
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x01")
+		(at 229.87 227.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a2b66e15-5744-4a17-b08d-18b72336d8c1")
+		(property "Reference" "J11"
+			(at 232.41 226.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M5 Screw"
+			(at 232.41 228.5999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 229.87 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "50M050080J008"
+			(at 229.87 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 229.87 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "54d330f4-beb5-4d60-89ab-bc0e7aa9dfeb")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 82.55 219.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a35ba94a-2e8b-46a0-8bfc-7dbd3687a192")
+		(property "Reference" "D8"
+			(at 82.2326 223.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 79.6926 223.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 82.55 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 82.55 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Cree LED"
+			(at 82.55 219.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C4SMA-RGY-CS4V1BB1"
+			(at 82.55 219.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 82.55 219.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "39e56cb4-6788-4413-89b9-b81c3558f7bb")
+		)
+		(pin "2"
+			(uuid "77eb556f-acd8-455e-824c-9ae36f53ee1a")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 176.53 270.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4366f1a-f7e8-4f10-872e-1ae57b841ff4")
+		(property "Reference" "#PWR056"
+			(at 176.53 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 176.53 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 176.53 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3fac10e0-0d19-4d7a-83f6-0cc8b9fcb639")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -10386,6 +15101,331 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 133.35 233.68 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab8837a1-8863-43d1-93b1-103d856bffb0")
+		(property "Reference" "#PWR049"
+			(at 127 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 129.54 233.6799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 133.35 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f11101cb-c7c9-40ce-aaf9-47e34361136e")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys:154-UL6661")
+		(at 173.99 254 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad92568f-f20f-49c3-b4d2-126b46ad313b")
+		(property "Reference" "J9"
+			(at 166.37 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "154-UL6661"
+			(at 168.91 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 268.91 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/449/KC-300616-1212190.pdf"
+			(at 368.91 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Modular Connectors / Ethernet Connectors JACK PCB 6P-6C BLK"
+			(at 173.99 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "15.875"
+			(at 568.91 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Kobiconn"
+			(at 668.91 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "154-UL6661"
+			(at 768.91 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "154-UL6661"
+			(at 868.91 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Kobiconn/154-UL6661?qs=olhD%252BKI%2Fybo0R6DqQv4X2A%3D%3D"
+			(at 968.91 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 1068.91 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 1168.91 237.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 173.99 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "a5571b4a-a852-4b9b-830b-4835a004503f")
+		)
+		(pin "2"
+			(uuid "14d3c535-75b1-4fe8-9dac-beede98cd272")
+		)
+		(pin "1"
+			(uuid "5f96ef84-223a-4e14-901b-10254851a79a")
+		)
+		(pin "6"
+			(uuid "ff574014-1363-4e95-9672-8bc73a8a1abf")
+		)
+		(pin "3"
+			(uuid "4ef3b7c9-5151-4112-9645-8ab34c70ef0f")
+		)
+		(pin "5"
+			(uuid "c61622f0-b6aa-415c-922b-6ce98933b871")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 33.02 219.71 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ae07bf4e-efad-4d85-b7fe-d64b3d53012c")
+		(property "Reference" "R9"
+			(at 34.2901 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "300"
+			(at 31.7501 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 217.932 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 33.02 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 33.02 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 33.02 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MFR-25FTE52-300R"
+			(at 33.02 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 33.02 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9b222ae8-5206-4914-9e74-f4d22ae9af99")
+		)
+		(pin "2"
+			(uuid "2f1dfe0e-2e76-4e0e-9362-1c4af9660d57")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 160.02 167.64 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10445,6 +15485,170 @@
 			(project ""
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 165.1 219.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3747817-a808-4cfa-b88b-dd7245b5366a")
+		(property "Reference" "D12"
+			(at 164.7826 223.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 162.2426 223.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 165.1 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Cree LED"
+			(at 165.1 219.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "C4SMA-RGY-CS4V1BB1"
+			(at 165.1 219.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 165.1 219.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f5e4248c-9e50-4c8c-8953-1ef9938cbef2")
+		)
+		(pin "2"
+			(uuid "6a006902-9cb2-4d41-93aa-5548e9a04776")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 91.44 254 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3a7b5b1-4f6f-40b5-954b-9328479a5b0a")
+		(property "Reference" "#PWR045"
+			(at 85.09 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 87.63 253.9999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 91.44 254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8797c47e-810c-4c19-a2d6-b90141975e12")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -10685,6 +15889,169 @@
 			(project "buzzCatcher"
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x01")
+		(at 229.87 233.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd5864fe-2440-49ab-ad71-a662eb3907c1")
+		(property "Reference" "J12"
+			(at 232.41 232.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M5 Screw"
+			(at 232.41 234.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 229.87 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "50M050080J008"
+			(at 229.87 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 229.87 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "12a1a642-d0d7-48e2-aa3e-83a575710dc4")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "J12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 96.52 219.71 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd84049a-1380-4a0f-b009-fc2aca632546")
+		(property "Reference" "SW2"
+			(at 96.52 227.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 96.52 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 96.52 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "PV5S64019"
+			(at 96.52 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b5d8961-2602-4d7c-ba9d-196a3f7d2740")
+		)
+		(pin "2"
+			(uuid "3e849fd1-0474-48f2-8644-856f722bc8ed")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -11404,6 +16771,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 49.53 233.68 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb3bf7d1-ea13-4afa-b53b-9d0942a1db3b")
+		(property "Reference" "#PWR035"
+			(at 43.18 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 45.72 233.6799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 49.53 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7de18f79-db9d-4caf-94d4-e6b7f751ec4c")
+		)
+		(instances
+			(project ""
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SamacSys:870575873001")
 		(at 24.13 176.53 270)
 		(unit 1)
@@ -11611,6 +17045,249 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 135.89 266.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d02ce40e-9666-46a1-b291-d6ad3f87546b")
+		(property "Reference" "R14"
+			(at 138.43 265.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "300"
+			(at 138.43 267.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.112 266.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 135.89 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Yageo"
+			(at 135.89 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MFR-25FTE52-300R"
+			(at 135.89 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 135.89 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7967e6e4-0801-4ab3-a2c1-50c7d7af768d")
+		)
+		(pin "2"
+			(uuid "fc988d1c-0ac6-42fa-aaee-35e2441f5916")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys:TS02-66-60-BK-100-SCR-D")
+		(at 78.74 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0704be8-ceef-49c1-b299-c8f75891ed59")
+		(property "Reference" "IC7"
+			(at 93.98 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TS02-66-60-BK-100-SCR-D"
+			(at 93.98 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TS026660BK100SCRD"
+			(at 105.41 282.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.cuidevices.com/product/resource/ts02.pdf"
+			(at 105.41 382.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tactile Switches 6 x 6 mm, 6 mm Act Height, 100 gf, Black, Short Crimped, Through Hole, SPST,"
+			(at 78.74 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "6.2"
+			(at 105.41 582.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Same Sky"
+			(at 105.41 682.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "TS02-66-60-BK-100-SCR-D"
+			(at 105.41 782.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "179-TS026660BK100SCR"
+			(at 105.41 882.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Same-Sky/TS02-66-60-BK-100-SCR-D?qs=A6eO%252BMLsxmRCwE7519dLfw%3D%3D"
+			(at 105.41 982.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 105.41 1082.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 105.41 1182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "5722aa19-be75-4f1a-bfd2-31842d9b288c")
+		)
+		(pin "1"
+			(uuid "fa545f7a-89a8-451b-a6d5-d15a209f116d")
+		)
+		(pin "2"
+			(uuid "43c2a39d-4bf9-4789-9be2-514174946955")
+		)
+		(pin "3"
+			(uuid "9fb49ea2-4ea5-4c7f-88a5-94c3541bfb3a")
+		)
+		(instances
+			(project ""
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "IC7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 267.97 104.14 90)
 		(unit 1)
@@ -11693,6 +17370,72 @@
 			(project "buzzCatcher"
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 29.21 219.71 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d4b42321-85f1-4c1b-a948-b280f21cdf44")
+		(property "Reference" "#PWR034"
+			(at 22.86 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 24.13 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 29.21 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "902ce0d9-4cd5-4ee9-a15f-9862fbeb041d")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -11851,6 +17594,205 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 130.81 182.88 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dce30aa0-c7af-4a56-a6cb-c3c8e3b76ac8")
+		(property "Reference" "#PWR033"
+			(at 130.81 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 130.81 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 130.81 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ff8c69b1-b2cf-47ae-8d1a-674882ed6550")
+		)
+		(instances
+			(project ""
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 135.89 270.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd417ca3-4a1e-4582-acef-9b521525cbf6")
+		(property "Reference" "#PWR051"
+			(at 135.89 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 135.89 275.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 135.89 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c84bfa72-bc0a-49f9-bc61-f6daed6239f8")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 173.99 233.68 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "de34d3c7-5018-4afe-82b0-97e3902a1735")
+		(property "Reference" "#PWR054"
+			(at 167.64 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 170.18 233.6799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 173.99 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0df0bfb2-b873-4a5a-bddd-411c1320e2c1")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SamacSys:USB4130-GF-C")
 		(at 36.83 166.37 0)
 		(unit 1)
@@ -12003,6 +17945,91 @@
 			(project ""
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x01")
+		(at 229.87 240.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8dae97b-d15b-4000-9ca4-802f188b9c3e")
+		(property "Reference" "J13"
+			(at 232.41 238.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M5 Screw"
+			(at 232.41 241.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 229.87 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "50M050080J008"
+			(at 229.87 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "DNP"
+			(at 229.87 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb3085e7-083a-41b7-a226-6bcdda72dbad")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "J13")
 					(unit 1)
 				)
 			)
