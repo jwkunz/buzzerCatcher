@@ -419,6 +419,361 @@
 				)
 			)
 		)
+		(symbol "Connector:USB_B_Micro"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -5.08 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "USB_B_Micro"
+				(at -5.08 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 3.81 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 3.81 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "USB Micro Type B connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector USB micro"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "USB*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "USB_B_Micro_0_1"
+				(rectangle
+					(start -5.08 -7.62)
+					(end 5.08 7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -3.81 2.159)
+					(radius 0.635)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center -0.635 3.429)
+					(radius 0.381)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -0.127 -7.62)
+					(end 0.127 -6.858)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 2.159) (xy 0.635 2.159)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.175 2.159) (xy -2.54 2.159) (xy -1.27 3.429) (xy -0.635 3.429)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.159) (xy -1.905 2.159) (xy -1.27 0.889) (xy 0 0.889)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 2.794) (xy 0.635 1.524) (xy 1.905 2.159) (xy 0.635 2.794)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.318 5.588) (xy -1.778 5.588) (xy -2.032 4.826) (xy -4.064 4.826) (xy -4.318 5.588)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.699 5.842) (xy -4.699 5.588) (xy -4.445 4.826) (xy -4.445 4.572) (xy -1.651 4.572) (xy -1.651 4.826)
+						(xy -1.397 5.588) (xy -1.397 5.842) (xy -4.699 5.842)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0.254 1.27)
+					(end -0.508 0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 5.08 -5.207)
+					(end 4.318 -4.953)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 -2.667)
+					(end 4.318 -2.413)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 -0.127)
+					(end 4.318 0.127)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 4.953)
+					(end 4.318 5.207)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "USB_B_Micro_1_1"
+				(pin power_out line
+					(at 7.62 5.08 180)
+					(length 2.54)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "D-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "D+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -5.08 180)
+					(length 2.54)
+					(name "ID"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -10.16 90)
+					(length 2.54)
+					(name "Shield"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "MCU_Module:Arduino_Nano_v3.x"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1034,6 +1389,177 @@
 						)
 					)
 					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SamacSys:67996-100HLF"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 16.51 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "67996-100HLF"
+				(at 16.51 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "HDRV2W67P254_2X1_254X483X858P"
+				(at 16.51 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/67996.pdf"
+				(at 16.51 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "BergStik<sup>&reg;</sup>, Board to Board connector, Unshrouded vertical header, Through Hole, Double Row, 0 Positions, 2.54 mm (0.100in) Pitch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "8.58"
+				(at 16.51 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Amphenol Communications Solutions"
+				(at 16.51 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "67996-100HLF"
+				(at 16.51 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" ""
+				(at 16.51 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" ""
+				(at 16.51 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Part Number" "67996-100HLF"
+				(at 16.51 -894.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/67996-100hlf/amphenol-fci?region=nac"
+				(at 16.51 -994.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "67996-100HLF_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 15.24 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4154,10 +4680,6 @@
 		(uuid "ed2a4b14-cb1b-4a97-99b2-e2676b341a2f")
 	)
 	(no_connect
-		(at 140.97 96.52)
-		(uuid "02ac05a5-ee52-496b-9f92-f30a89cae561")
-	)
-	(no_connect
 		(at 166.37 68.58)
 		(uuid "13ef400e-f90b-4b6e-a6dc-1aafbcda20e9")
 	)
@@ -4194,10 +4716,6 @@
 		(uuid "6069663b-cbb6-43a3-b5c9-c53a91ac7eee")
 	)
 	(no_connect
-		(at 156.21 55.88)
-		(uuid "65b9305b-3dda-4177-bc4f-b4e90eae72fd")
-	)
-	(no_connect
 		(at 140.97 66.04)
 		(uuid "77138030-6f98-4561-ac01-ed91dcdb0aff")
 	)
@@ -4206,16 +4724,8 @@
 		(uuid "88748752-dae8-4058-9394-4629d69a2061")
 	)
 	(no_connect
-		(at 140.97 93.98)
-		(uuid "92472b6c-a0ba-4616-8ee0-752ab60ad92a")
-	)
-	(no_connect
 		(at 250.19 67.31)
 		(uuid "92ab0091-a64e-4a53-9e9b-d60a2ae43376")
-	)
-	(no_connect
-		(at 140.97 91.44)
-		(uuid "93c1400d-3b68-4513-b3db-91cb3ae55eaf")
 	)
 	(no_connect
 		(at 224.79 233.68)
@@ -4236,10 +4746,6 @@
 	(no_connect
 		(at 154.94 153.67)
 		(uuid "cb71ecb4-5e5e-476e-b635-39a07b797a1c")
-	)
-	(no_connect
-		(at 140.97 99.06)
-		(uuid "ce2688fb-026c-48f4-abde-12e0f1ab3a91")
 	)
 	(no_connect
 		(at 124.46 153.67)
@@ -4507,6 +5013,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 93.98) (xy 140.97 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "440eb6a5-0e4a-4d0d-8719-0e605ed191a7")
+	)
+	(wire
+		(pts
 			(xy 241.3 152.4) (xy 241.3 154.94)
 		)
 		(stroke
@@ -4694,6 +5210,26 @@
 			(type default)
 		)
 		(uuid "73e9c986-180e-4cd2-8471-f569e3052f7d")
+	)
+	(wire
+		(pts
+			(xy 105.41 109.22) (xy 127 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "743c1e97-a705-47b0-a07e-4292ef9b9dc4")
+	)
+	(wire
+		(pts
+			(xy 140.97 96.52) (xy 134.62 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7595aa19-7ff6-48fa-89c6-47ff5c72c0ef")
 	)
 	(wire
 		(pts
@@ -4937,6 +5473,26 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 99.06) (xy 137.16 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac20dbf4-ddde-4f5c-8f3f-98825804c92f")
+	)
+	(wire
+		(pts
+			(xy 137.16 99.06) (xy 127 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac853f61-2724-4753-b208-d4daaf6056e7")
+	)
+	(wire
+		(pts
 			(xy 52.07 327.66) (xy 52.07 328.93)
 		)
 		(stroke
@@ -4944,6 +5500,16 @@
 			(type default)
 		)
 		(uuid "ad68ab77-7243-4116-8dc3-ac322b5ab771")
+	)
+	(wire
+		(pts
+			(xy 105.41 91.44) (xy 140.97 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b30de1d1-d650-4929-820f-d78ca3f3b8d4")
 	)
 	(wire
 		(pts
@@ -5087,6 +5653,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 96.52) (xy 124.46 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db3c6176-ba44-4b2c-ab05-ea16e20fe0ed")
+	)
+	(wire
+		(pts
 			(xy 273.05 59.69) (xy 273.05 62.23)
 		)
 		(stroke
@@ -5094,6 +5670,16 @@
 			(type default)
 		)
 		(uuid "dd22ac67-07d2-465a-8d52-b9a9d91b6949")
+	)
+	(wire
+		(pts
+			(xy 105.41 106.68) (xy 124.46 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df78fd77-54a5-4b78-8917-1bee2842ff0b")
 	)
 	(wire
 		(pts
@@ -5329,6 +5915,17 @@
 		)
 		(uuid "0bfc9150-87ee-42ee-9f60-e4498c54c91f")
 	)
+	(label "Vbus_3V3"
+		(at 105.41 76.2 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "122f17f4-200d-47dc-879a-b0912288f891")
+	)
 	(label "Ready"
 		(at 74.93 25.4 180)
 		(fields_autoplaced yes)
@@ -5372,6 +5969,17 @@
 			(justify left bottom)
 		)
 		(uuid "1f388539-d5ea-481d-b97a-507380cc51e6")
+	)
+	(label "Vbus_5V"
+		(at 105.41 62.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1f442030-b8b9-4226-9643-549d13b2a265")
 	)
 	(label "Trigger 3"
 		(at 74.93 33.02 180)
@@ -5460,6 +6068,17 @@
 			(justify right bottom)
 		)
 		(uuid "35886519-3d45-45f5-be08-4ce46bdee733")
+	)
+	(label "Vbus_3V3"
+		(at 156.21 55.88 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "45cc34e9-7566-4c67-b4b3-a05b021b8620")
 	)
 	(label "LED 5"
 		(at 210.82 49.53 180)
@@ -5908,6 +6527,73 @@
 			(project "buzzCatcher"
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 105.41 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07440deb-1734-4d59-a065-202cf3f8341a")
+		(property "Reference" "#PWR041"
+			(at 111.76 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 109.22 64.7699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 105.41 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "18106d1c-4f22-4290-97fd-cef71bd2977d")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -7308,6 +7994,146 @@
 			(project "buzzCatcher"
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys:67996-100HLF")
+		(at 105.41 64.77 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "406973b9-942e-44ce-b4b7-9654c17f7534")
+		(property "Reference" "J20"
+			(at 95.25 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "67996-100HLF"
+			(at 95.25 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "HDRV2W67P254_2X1_254X483X858P"
+			(at 88.9 -30.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/67996.pdf"
+			(at 88.9 -130.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "BergStik<sup>&reg;</sup>, Board to Board connector, Unshrouded vertical header, Through Hole, Double Row, 0 Positions, 2.54 mm (0.100in) Pitch"
+			(at 105.41 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "8.58"
+			(at 88.9 -330.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Amphenol Communications Solutions"
+			(at 88.9 -430.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "67996-100HLF"
+			(at 88.9 -530.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 88.9 -630.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 88.9 -730.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "67996-100HLF"
+			(at 88.9 -830.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/67996-100hlf/amphenol-fci?region=nac"
+			(at 88.9 -930.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6d3c912-4e48-4fba-a27c-641df74c28a4")
+		)
+		(pin "2"
+			(uuid "1cba2401-39a6-4aa0-a814-3ab4f8338a8d")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "J20")
 					(unit 1)
 				)
 			)
@@ -9714,6 +10540,95 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:USB_B_Micro")
+		(at 237.49 334.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8811a368-4b8f-43d0-8dba-1ad23c2034a6")
+		(property "Reference" "J21"
+			(at 237.49 321.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "USB_B_Micro"
+			(at 237.49 323.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 335.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 241.3 335.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "USB Micro Cable"
+			(at 237.49 334.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "USB CABLE MICRO 80"
+			(at 237.49 334.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "25a4b266-2fbc-45a3-9479-d726a895f24a")
+		)
+		(pin "6"
+			(uuid "1b863ac6-e1c5-4191-8c3e-e7c336cbb006")
+		)
+		(pin "5"
+			(uuid "82750bf3-4a1f-4f8f-a380-bba2dc47cea9")
+		)
+		(pin "4"
+			(uuid "7631bd14-2813-42af-80ef-bf4f42ae0bf4")
+		)
+		(pin "1"
+			(uuid "01b39d33-b81f-46a8-bdd6-952f172ecbab")
+		)
+		(pin "3"
+			(uuid "047f48c1-708b-432a-a8a7-60d6e7078fcd")
+		)
+		(instances
+			(project ""
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "J21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 36.83 106.68 270)
 		(unit 1)
@@ -10262,6 +11177,146 @@
 			(project "buzzCatcher"
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys:67996-100HLF")
+		(at 105.41 109.22 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9a1e00ca-cdf6-4905-bfa4-ee5c9dace4f6")
+		(property "Reference" "J18"
+			(at 95.25 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "67996-100HLF"
+			(at 95.25 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "HDRV2W67P254_2X1_254X483X858P"
+			(at 88.9 14.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/67996.pdf"
+			(at 88.9 -85.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "BergStik<sup>&reg;</sup>, Board to Board connector, Unshrouded vertical header, Through Hole, Double Row, 0 Positions, 2.54 mm (0.100in) Pitch"
+			(at 105.41 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "8.58"
+			(at 88.9 -285.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Amphenol Communications Solutions"
+			(at 88.9 -385.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "67996-100HLF"
+			(at 88.9 -485.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 88.9 -585.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 88.9 -685.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "67996-100HLF"
+			(at 88.9 -785.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/67996-100hlf/amphenol-fci?region=nac"
+			(at 88.9 -885.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b4a9956-b9c1-47b3-824d-40640544bebe")
+		)
+		(pin "2"
+			(uuid "a845669b-2d9a-445b-823a-398b629d5985")
+		)
+		(instances
+			(project ""
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "J18")
 					(unit 1)
 				)
 			)
@@ -10863,6 +11918,286 @@
 			(project "buzzCatcher"
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys:67996-100HLF")
+		(at 105.41 78.74 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "afe04b16-76f7-4b69-9a05-0fcc4aaf6adf")
+		(property "Reference" "J19"
+			(at 95.25 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "67996-100HLF"
+			(at 95.25 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "HDRV2W67P254_2X1_254X483X858P"
+			(at 88.9 -16.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/67996.pdf"
+			(at 88.9 -116.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "BergStik<sup>&reg;</sup>, Board to Board connector, Unshrouded vertical header, Through Hole, Double Row, 0 Positions, 2.54 mm (0.100in) Pitch"
+			(at 105.41 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "8.58"
+			(at 88.9 -316.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Amphenol Communications Solutions"
+			(at 88.9 -416.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "67996-100HLF"
+			(at 88.9 -516.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 88.9 -616.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 88.9 -716.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "67996-100HLF"
+			(at 88.9 -816.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/67996-100hlf/amphenol-fci?region=nac"
+			(at 88.9 -916.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b4a9956-b9c1-47b3-824d-40640544bebe")
+		)
+		(pin "2"
+			(uuid "a845669b-2d9a-445b-823a-398b629d5985")
+		)
+		(instances
+			(project ""
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "J19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys:67996-100HLF")
+		(at 105.41 93.98 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b146a09e-6dd2-45ba-bb5c-19889dff8f6b")
+		(property "Reference" "J17"
+			(at 95.25 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "67996-100HLF"
+			(at 95.25 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "HDRV2W67P254_2X1_254X483X858P"
+			(at 88.9 -0.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/67996.pdf"
+			(at 88.9 -100.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "BergStik<sup>&reg;</sup>, Board to Board connector, Unshrouded vertical header, Through Hole, Double Row, 0 Positions, 2.54 mm (0.100in) Pitch"
+			(at 105.41 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "8.58"
+			(at 88.9 -300.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Amphenol Communications Solutions"
+			(at 88.9 -400.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "67996-100HLF"
+			(at 88.9 -500.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 88.9 -600.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 88.9 -700.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "67996-100HLF"
+			(at 88.9 -800.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/67996-100hlf/amphenol-fci?region=nac"
+			(at 88.9 -900.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b4a9956-b9c1-47b3-824d-40640544bebe")
+		)
+		(pin "2"
+			(uuid "a845669b-2d9a-445b-823a-398b629d5985")
+		)
+		(instances
+			(project ""
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "J17")
 					(unit 1)
 				)
 			)
@@ -11510,6 +12845,73 @@
 			(project "buzzCatcher"
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 105.41 78.74 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5c7ef39-5976-4b7b-bfb9-803aad8956c5")
+		(property "Reference" "#PWR042"
+			(at 111.76 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 109.22 78.7399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 105.41 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "68d2821e-1619-432e-8c0d-7292e7eb9070")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -13462,6 +14864,95 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:USB_B_Micro")
+		(at 259.08 334.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f803a537-06f0-492c-8878-ada505829f81")
+		(property "Reference" "J22"
+			(at 259.08 321.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "USB_B_Micro"
+			(at 259.08 323.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 335.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 262.89 335.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "USB Charger"
+			(at 259.08 334.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "PSAA05A-050QL6-R"
+			(at 259.08 334.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3e1dfffa-c7d4-4980-8325-48346b001443")
+		)
+		(pin "6"
+			(uuid "df71809a-05d9-400a-91ad-61639e04e462")
+		)
+		(pin "5"
+			(uuid "ebe58abd-02cc-4fed-ae04-040d3d61c448")
+		)
+		(pin "4"
+			(uuid "d16c1fcc-d9de-42dc-842c-0403c7e3d53b")
+		)
+		(pin "1"
+			(uuid "a2c350d3-4792-4f51-a5c7-363d597902c2")
+		)
+		(pin "3"
+			(uuid "793ee308-bf39-4d0d-a498-df24fb1764e5")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "J22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 156.21 106.68 0)
 		(unit 1)
@@ -13516,7 +15007,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "c134cabc-052b-47b0-b083-d51d1f28e256")
+			(uuid "c134cabc-052b-47b0-b083-d51d1f28e257")
 		)
 		(instances
 			(project ""
