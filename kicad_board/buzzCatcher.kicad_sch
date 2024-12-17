@@ -1398,6 +1398,852 @@
 				)
 			)
 		)
+		(symbol "SamacSys:4116R-1-103FLF"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RN"
+				(at 19.05 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "4116R-1-103FLF"
+				(at 19.05 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "DIP787W49P254L2197H469Q16N"
+				(at 19.05 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.bourns.com/data/global/pdfs/4100R.pdf"
+				(at 19.05 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor Networks & Arrays 10K OHM 16 PIN 1%"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "4.69"
+				(at 19.05 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Bourns"
+				(at 19.05 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "4116R-1-103FLF"
+				(at 19.05 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "652-4116R-001-103FLF"
+				(at 19.05 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/4116R-1-103FLF?qs=v1pTd5RMxMzVCdNQjiU%2FxA%3D%3D"
+				(at 19.05 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Part Number" "4116R-1-103FLF"
+				(at 19.05 -894.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/4116r-1-103flf/bourns"
+				(at 19.05 -994.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "4116R-1-103FLF_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 17.78 -20.32)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -15.24 180)
+					(length 5.08)
+					(name "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -12.7 180)
+					(length 5.08)
+					(name "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -10.16 180)
+					(length 5.08)
+					(name "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -7.62 180)
+					(length 5.08)
+					(name "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -5.08 180)
+					(length 5.08)
+					(name "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -2.54 180)
+					(length 5.08)
+					(name "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 0 180)
+					(length 5.08)
+					(name "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 0)
+					(length 5.08)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 0)
+					(length 5.08)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -15.24 0)
+					(length 5.08)
+					(name "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -17.78 0)
+					(length 5.08)
+					(name "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -17.78 180)
+					(length 5.08)
+					(name "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SamacSys:4116R-1-121LF"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 19.05 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "4116R-1-121LF"
+				(at 19.05 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "DIP787W49P254L2197H469Q16N"
+				(at 19.05 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.mouser.ch/datasheet/2/54/4100R-776985.pdf"
+				(at 19.05 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "BOURNS - 4116R-1-121LF - Fixed Network Resistor, 120 ohm, 4100R Series, 8 Elements, Isolated, DIP, 16 Pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "4.69"
+				(at 19.05 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Bourns"
+				(at 19.05 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "4116R-1-121LF"
+				(at 19.05 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "652-4116R-1LF-120"
+				(at 19.05 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/4116R-1-121LF?qs=10P5Hhl%252BD7%2FiVs%252BU8BCs6Q%3D%3D"
+				(at 19.05 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Part Number" "4116R-1-121LF"
+				(at 19.05 -894.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Arrow Price/Stock" "https://www.arrow.com/en/products/4116r-1-121lf/bourns"
+				(at 19.05 -994.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "4116R-1-121LF_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 17.78 -20.32)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -15.24 180)
+					(length 5.08)
+					(name "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -12.7 180)
+					(length 5.08)
+					(name "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -10.16 180)
+					(length 5.08)
+					(name "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -7.62 180)
+					(length 5.08)
+					(name "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -5.08 180)
+					(length 5.08)
+					(name "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -2.54 180)
+					(length 5.08)
+					(name "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 0 180)
+					(length 5.08)
+					(name "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 0)
+					(length 5.08)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -12.7 0)
+					(length 5.08)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -15.24 0)
+					(length 5.08)
+					(name "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -17.78 0)
+					(length 5.08)
+					(name "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -17.78 180)
+					(length 5.08)
+					(name "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "SamacSys:67996-100HLF"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2224,852 +3070,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "SamacSys:EXB2HV103JV"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "RN"
-				(at 19.05 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "EXB2HV103JV"
-				(at 19.05 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "EXB2HV104JV"
-				(at 19.05 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/EXB-2HV104JV.pdf"
-				(at 19.05 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "RESISTOR,CVEX ARRAY,0402X8, 10K 5% ROHS COMPLIANT: YES"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" "0.55"
-				(at 19.05 -394.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Panasonic"
-				(at 19.05 -494.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "EXB2HV103JV"
-				(at 19.05 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" ""
-				(at 19.05 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" ""
-				(at 19.05 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Arrow Part Number" ""
-				(at 19.05 -894.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Arrow Price/Stock" ""
-				(at 19.05 -994.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "EXB2HV103JV_1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 17.78 -20.32)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -15.24 180)
-					(length 5.08)
-					(name "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -12.7 180)
-					(length 5.08)
-					(name "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -10.16 180)
-					(length 5.08)
-					(name "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -7.62 180)
-					(length 5.08)
-					(name "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -5.08 180)
-					(length 5.08)
-					(name "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -2.54 180)
-					(length 5.08)
-					(name "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 0 180)
-					(length 5.08)
-					(name "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -10.16 0)
-					(length 5.08)
-					(name "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -12.7 0)
-					(length 5.08)
-					(name "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -15.24 0)
-					(length 5.08)
-					(name "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -17.78 0)
-					(length 5.08)
-					(name "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -17.78 180)
-					(length 5.08)
-					(name "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "SamacSys:EXB2HV121JV"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "RN"
-				(at 19.05 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "EXB2HV121JV"
-				(at 19.05 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "EXB2HV_1"
-				(at 19.05 -94.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf"
-				(at 19.05 -194.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor Networks & Arrays 120 OHM 5%"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" ""
-				(at 19.05 -394.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Panasonic"
-				(at 19.05 -494.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "EXB2HV121JV"
-				(at 19.05 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" ""
-				(at 19.05 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" ""
-				(at 19.05 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Arrow Part Number" ""
-				(at 19.05 -894.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Arrow Price/Stock" ""
-				(at 19.05 -994.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "EXB2HV121JV_1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 17.78 -20.32)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -15.24 180)
-					(length 5.08)
-					(name "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -12.7 180)
-					(length 5.08)
-					(name "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -10.16 180)
-					(length 5.08)
-					(name "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -7.62 180)
-					(length 5.08)
-					(name "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -5.08 180)
-					(length 5.08)
-					(name "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -2.54 180)
-					(length 5.08)
-					(name "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 0 180)
-					(length 5.08)
-					(name "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -10.16 0)
-					(length 5.08)
-					(name "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -12.7 0)
-					(length 5.08)
-					(name "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -15.24 0)
-					(length 5.08)
-					(name "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -17.78 0)
-					(length 5.08)
-					(name "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 22.86 -17.78 180)
-					(length 5.08)
-					(name "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4506,28 +4506,22 @@
 		)
 	)
 	(junction
-		(at 273.05 62.23)
+		(at 273.05 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "007ab9ff-d2b1-4a2b-bf40-1daf4816c6e3")
+		(uuid "0552d9e9-65fb-4c7f-b3f4-49cde8bb7870")
 	)
 	(junction
-		(at 273.05 72.39)
+		(at 273.05 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "028acba9-3b23-4316-a087-d9132d316cf9")
+		(uuid "07b5b39a-80e4-4127-8a88-52a0881b124a")
 	)
 	(junction
-		(at 97.79 35.56)
+		(at 273.05 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "05a536ab-23e9-4de7-b54b-ee9b8e0af068")
-	)
-	(junction
-		(at 273.05 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0b0ceca9-a9e1-4b56-a084-583c1af80f45")
+		(uuid "0aaf73fc-3872-42f9-937d-b9a1c150c56b")
 	)
 	(junction
 		(at 24.13 91.44)
@@ -4536,40 +4530,28 @@
 		(uuid "11734804-d190-4deb-9026-54504ae608e5")
 	)
 	(junction
-		(at 273.05 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "14459205-b417-413e-9389-3d57bd793404")
-	)
-	(junction
 		(at 24.13 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1d5107d8-e7ac-4d08-a0d1-558852c80c92")
 	)
 	(junction
-		(at 273.05 74.93)
+		(at 273.05 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "28c3fae9-793a-4499-8e5a-2db8413fe557")
-	)
-	(junction
-		(at 97.79 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2d915ee0-2079-4b97-af43-4058c3a0c997")
+		(uuid "29b126bc-942a-4fea-b06b-34c1c9cccc27")
 	)
 	(junction
 		(at 97.79 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3fe82f25-c20e-4623-8c7c-4357400ac499")
+		(uuid "2c594eaa-b417-45d1-9a8e-5352d90d2e08")
 	)
 	(junction
-		(at 273.05 59.69)
+		(at 97.79 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "435b3cc0-0e17-4faf-abf0-4e3e14942cc6")
+		(uuid "3517a25a-652a-4072-9fd7-d1200cb3a0d4")
 	)
 	(junction
 		(at 44.45 293.37)
@@ -4578,16 +4560,16 @@
 		(uuid "4a249f85-8a94-4e4a-9039-a62c5d730ad1")
 	)
 	(junction
-		(at 273.05 67.31)
+		(at 273.05 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "550230e8-2ab2-4d58-80bc-28ec226797b1")
+		(uuid "563395fc-7aae-41c2-a64d-c00446aa38e8")
 	)
 	(junction
-		(at 273.05 39.37)
+		(at 273.05 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "552958e7-8a55-47a3-a11b-619c1216fb57")
+		(uuid "5afbbfaf-5ba6-48eb-bddf-8071f59f1b3a")
 	)
 	(junction
 		(at 105.41 293.37)
@@ -4596,16 +4578,22 @@
 		(uuid "5afcb9ac-9c63-45de-b315-c5ceabfaa444")
 	)
 	(junction
-		(at 273.05 29.21)
+		(at 97.79 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6f145c7b-7ebf-4e66-bc4c-e39ddb9f0541")
+		(uuid "66545737-f5c4-4796-bb09-5694eeefc0d3")
 	)
 	(junction
-		(at 273.05 31.75)
+		(at 273.05 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "706beb2c-ebdb-44d3-aed0-d9c82073518a")
+		(uuid "7054c03e-4306-4811-98a4-86b813299936")
+	)
+	(junction
+		(at 273.05 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7531cf05-77ce-4081-af48-a052c73af896")
 	)
 	(junction
 		(at 104.14 220.98)
@@ -4614,10 +4602,40 @@
 		(uuid "7c28ad8c-a86b-4b42-be2f-cf56f53477c4")
 	)
 	(junction
+		(at 97.79 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "80e308aa-e014-4fb0-a89e-386767d175e2")
+	)
+	(junction
+		(at 273.05 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "848f9c4d-3fc0-4839-8372-d4c4e32f29d4")
+	)
+	(junction
+		(at 273.05 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "94dd2b8d-18fb-4ce9-a823-5e14958981d9")
+	)
+	(junction
+		(at 273.05 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "95d74752-9fdd-4524-afaf-ce41e3be2496")
+	)
+	(junction
 		(at 273.05 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "890e84c6-45a2-4770-97d9-cc930382e8d3")
+		(uuid "98f4cfd2-9575-4804-8ae6-4ab58cbb1a5f")
+	)
+	(junction
+		(at 97.79 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6f82bad-75b9-452a-bbc0-cb497cff32a9")
 	)
 	(junction
 		(at 44.45 219.71)
@@ -4626,58 +4644,40 @@
 		(uuid "a72a2aa5-57ea-4a28-be84-4ceaf8272a0f")
 	)
 	(junction
-		(at 273.05 44.45)
+		(at 273.05 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ac5ffc0a-8cdf-45c0-a04c-fe4db0d6c614")
+		(uuid "a7755ebc-fbe4-4cdd-80b1-4130e8e4526f")
 	)
 	(junction
-		(at 97.79 25.4)
+		(at 273.05 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ad378624-2589-463a-a73f-bd1e5f8bd31c")
-	)
-	(junction
-		(at 97.79 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b8426707-301f-4278-b10b-87950636f362")
-	)
-	(junction
-		(at 273.05 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bdbf5a0c-742f-4db6-ab79-93d7c5c50d60")
-	)
-	(junction
-		(at 97.79 40.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bf0ce9c3-4be8-47a5-8611-3e494ba73ee2")
-	)
-	(junction
-		(at 97.79 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c23a0428-4fad-4286-9fe5-9cf12cf1422e")
-	)
-	(junction
-		(at 273.05 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "db8e6758-a325-4394-bbf3-02c159854b0f")
-	)
-	(junction
-		(at 273.05 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e97a9169-3285-457e-9135-b7ea6c540c73")
+		(uuid "ca0cd35a-bd36-4c0f-8491-64af2f4e3a92")
 	)
 	(junction
 		(at 24.13 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ed2a4b14-cb1b-4a97-99b2-e2676b341a2f")
+	)
+	(junction
+		(at 97.79 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee2c8b05-27ef-4663-b2e3-9ed2c783820d")
+	)
+	(junction
+		(at 97.79 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f78cfed1-3dae-4231-84e9-811f85debe44")
+	)
+	(junction
+		(at 273.05 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f933a59d-189a-4211-9680-34d8d69e2969")
 	)
 	(no_connect
 		(at 166.37 68.58)
@@ -4753,13 +4753,33 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 31.75) (xy 273.05 34.29)
+			(xy 273.05 69.85) (xy 273.05 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "067b1e89-090d-4bc9-8629-f7b5b2d8c92f")
+		(uuid "00ba207a-eda1-4f01-a141-04355e55b8a1")
+	)
+	(wire
+		(pts
+			(xy 273.05 59.69) (xy 273.05 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "027723e2-1d24-4a48-b38b-58f2cda26fdc")
+	)
+	(wire
+		(pts
+			(xy 273.05 64.77) (xy 273.05 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0749b29d-32fd-4037-8b2c-44a89b23736d")
 	)
 	(wire
 		(pts
@@ -4803,16 +4823,6 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 25.4) (xy 97.79 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f7074aa-4d6e-4046-896c-72c37f3a85b3")
-	)
-	(wire
-		(pts
 			(xy 44.45 219.71) (xy 44.45 229.87)
 		)
 		(stroke
@@ -4820,6 +4830,16 @@
 			(type default)
 		)
 		(uuid "11748e6b-98c6-4e75-af78-30b6c7d72948")
+	)
+	(wire
+		(pts
+			(xy 273.05 72.39) (xy 273.05 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "172c7d9d-ebd7-42f8-9b7b-968007207f94")
 	)
 	(wire
 		(pts
@@ -4873,6 +4893,16 @@
 	)
 	(wire
 		(pts
+			(xy 273.05 36.83) (xy 273.05 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2225caab-576b-46f2-8d34-39adfdd7c325")
+	)
+	(wire
+		(pts
 			(xy 238.76 41.91) (xy 250.19 41.91)
 		)
 		(stroke
@@ -4893,7 +4923,7 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 67.31) (xy 273.05 69.85)
+			(xy 273.05 29.21) (xy 273.05 31.75)
 		)
 		(stroke
 			(width 0)
@@ -4923,23 +4953,23 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 72.39) (xy 273.05 74.93)
+			(xy 97.79 40.64) (xy 97.79 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2a193c3d-c0d5-40b3-8767-d96bdb21c78c")
+		(uuid "2f18059d-5274-4714-b8a3-8337e59e5694")
 	)
 	(wire
 		(pts
-			(xy 273.05 64.77) (xy 273.05 67.31)
+			(xy 273.05 62.23) (xy 273.05 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2f8f7e81-d6be-4ef9-ac15-7f81741626ea")
+		(uuid "2f6f7c08-9ed9-4e09-87ab-033f53a88860")
 	)
 	(wire
 		(pts
@@ -4970,16 +5000,6 @@
 			(type default)
 		)
 		(uuid "3a77004d-2017-4f76-ae36-a5c36e75fcbe")
-	)
-	(wire
-		(pts
-			(xy 97.79 40.64) (xy 97.79 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3af9f1c7-f140-46d1-81d8-34294154e352")
 	)
 	(wire
 		(pts
@@ -5043,16 +5063,6 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 46.99) (xy 273.05 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49195c61-5435-4cf3-b9dd-b7f6ade7021d")
-	)
-	(wire
-		(pts
 			(xy 62.23 293.37) (xy 59.69 293.37)
 		)
 		(stroke
@@ -5093,16 +5103,6 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 39.37) (xy 273.05 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4bd54353-b69c-42ff-99e5-2c4739e5f87b")
-	)
-	(wire
-		(pts
 			(xy 238.76 54.61) (xy 238.76 41.91)
 		)
 		(stroke
@@ -5110,16 +5110,6 @@
 			(type default)
 		)
 		(uuid "4d53f209-ba8c-4a78-891e-f1c80d001461")
-	)
-	(wire
-		(pts
-			(xy 97.79 38.1) (xy 97.79 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ede730e-8591-4fd2-beb1-afbc88c58c21")
 	)
 	(wire
 		(pts
@@ -5133,6 +5123,26 @@
 	)
 	(wire
 		(pts
+			(xy 273.05 44.45) (xy 273.05 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56f76f03-9a72-4e86-9bca-33b7d482ddb1")
+	)
+	(wire
+		(pts
+			(xy 273.05 67.31) (xy 273.05 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59478c66-6d22-4332-bdc5-5014f74dc2d5")
+	)
+	(wire
+		(pts
 			(xy 247.65 74.93) (xy 247.65 62.23)
 		)
 		(stroke
@@ -5140,6 +5150,16 @@
 			(type default)
 		)
 		(uuid "5ed4f268-147a-4cef-9a2c-10ff6e603bc7")
+	)
+	(wire
+		(pts
+			(xy 97.79 35.56) (xy 97.79 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "616e5701-4e5e-41cb-96ce-e7bdf002b10f")
 	)
 	(wire
 		(pts
@@ -5153,33 +5173,13 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 36.83) (xy 273.05 39.37)
+			(xy 97.79 38.1) (xy 97.79 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "65c4ef8b-c8bd-448b-9417-2cb2ac2f631b")
-	)
-	(wire
-		(pts
-			(xy 273.05 62.23) (xy 273.05 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d076ae2-e9b6-4daf-8b78-b18586308403")
-	)
-	(wire
-		(pts
-			(xy 273.05 29.21) (xy 273.05 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ff7df32-25a3-4c75-927f-6b1e237f4963")
+		(uuid "6f1f2615-1144-486d-9a6b-337b01772a15")
 	)
 	(wire
 		(pts
@@ -5283,13 +5283,13 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 74.93) (xy 273.05 77.47)
+			(xy 273.05 46.99) (xy 273.05 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7b5fac62-4d1a-4eb0-b575-550ede222a58")
+		(uuid "7c29d365-38e5-4441-b784-321487512c34")
 	)
 	(wire
 		(pts
@@ -5333,26 +5333,6 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 27.94) (xy 97.79 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "859caa70-420b-44c2-86a3-43211dd1d65b")
-	)
-	(wire
-		(pts
-			(xy 273.05 41.91) (xy 273.05 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "875d4b07-851f-482d-95c9-08976d07d07e")
-	)
-	(wire
-		(pts
 			(xy 233.68 59.69) (xy 241.3 59.69)
 		)
 		(stroke
@@ -5380,6 +5360,16 @@
 			(type default)
 		)
 		(uuid "8b7369f2-1683-421b-9185-55d18f578b3e")
+	)
+	(wire
+		(pts
+			(xy 273.05 41.91) (xy 273.05 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90b165de-1669-43c9-8673-4db27d56db8a")
 	)
 	(wire
 		(pts
@@ -5553,13 +5543,13 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 33.02) (xy 97.79 35.56)
+			(xy 97.79 30.48) (xy 97.79 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c44e09b4-d190-44cd-88b7-f830a578e4d1")
+		(uuid "c747e30a-c6d8-418b-9856-ace4f0a071b2")
 	)
 	(wire
 		(pts
@@ -5570,6 +5560,16 @@
 			(type default)
 		)
 		(uuid "c96f481a-5fbf-4389-b423-c90478451aa6")
+	)
+	(wire
+		(pts
+			(xy 273.05 74.93) (xy 273.05 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9dca84c-d16d-4605-ba4b-82f0fc126565")
 	)
 	(wire
 		(pts
@@ -5633,16 +5633,6 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 69.85) (xy 273.05 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da08b7d2-a604-45ae-b0ac-6035e9a966d2")
-	)
-	(wire
-		(pts
 			(xy 113.03 303.53) (xy 113.03 307.34)
 		)
 		(stroke
@@ -5660,16 +5650,6 @@
 			(type default)
 		)
 		(uuid "db3c6176-ba44-4b2c-ab05-ea16e20fe0ed")
-	)
-	(wire
-		(pts
-			(xy 273.05 59.69) (xy 273.05 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd22ac67-07d2-465a-8d52-b9a9d91b6949")
 	)
 	(wire
 		(pts
@@ -5733,6 +5713,36 @@
 	)
 	(wire
 		(pts
+			(xy 273.05 39.37) (xy 273.05 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eebad228-ced8-4880-9407-4dfe3c12c397")
+	)
+	(wire
+		(pts
+			(xy 273.05 34.29) (xy 273.05 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eff37fad-db81-41cc-9213-c4577139ef9b")
+	)
+	(wire
+		(pts
+			(xy 97.79 33.02) (xy 97.79 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0ce371c-2379-4f24-8773-b1e3214967bb")
+	)
+	(wire
+		(pts
 			(xy 105.41 303.53) (xy 113.03 303.53)
 		)
 		(stroke
@@ -5743,7 +5753,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 35.56) (xy 97.79 38.1)
+			(xy 97.79 25.4) (xy 97.79 27.94)
 		)
 		(stroke
 			(width 0)
@@ -5763,13 +5773,23 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 30.48) (xy 97.79 33.02)
+			(xy 273.05 31.75) (xy 273.05 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fc843d3d-b943-4773-8218-4297cb1a8d0d")
+		(uuid "f9b5b4de-e99c-463e-8eb4-bac7a0e6be76")
+	)
+	(wire
+		(pts
+			(xy 97.79 27.94) (xy 97.79 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb148e41-ac1b-4b3e-980a-3f7614a41519")
 	)
 	(wire
 		(pts
@@ -5780,26 +5800,6 @@
 			(type default)
 		)
 		(uuid "fc898a46-5e9f-4d5f-b362-f35f31fea8e3")
-	)
-	(wire
-		(pts
-			(xy 273.05 34.29) (xy 273.05 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd8c6486-2db7-48d5-a125-376a0b8d4b9a")
-	)
-	(wire
-		(pts
-			(xy 273.05 44.45) (xy 273.05 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe36c372-dcc1-4e2c-99e1-7ff5d18c03bb")
 	)
 	(wire
 		(pts
@@ -5915,6 +5915,17 @@
 		)
 		(uuid "0bfc9150-87ee-42ee-9f60-e4498c54c91f")
 	)
+	(label "Switch 1"
+		(at 74.93 43.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "117f1045-8710-4883-b4a1-579d9f79d8f4")
+	)
 	(label "Vbus_3V3"
 		(at 105.41 76.2 0)
 		(fields_autoplaced yes)
@@ -5947,17 +5958,6 @@
 			(justify left bottom)
 		)
 		(uuid "169b6578-a54e-45b1-bb3a-3864cc9a67b5")
-	)
-	(label "Buzzer"
-		(at 74.93 43.18 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1d60f7cb-f1cd-469e-8800-fd0900a756b4")
 	)
 	(label "LED 1"
 		(at 166.37 81.28 0)
@@ -6035,6 +6035,17 @@
 			(justify right bottom)
 		)
 		(uuid "28a299ea-ba1f-40aa-8ac7-16eb0b2b9c3c")
+	)
+	(label "Buzzer"
+		(at 74.93 40.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2fd05548-43e6-4db7-9718-49b2cfe7d00c")
 	)
 	(label "Button 1"
 		(at 124.46 156.21 180)
@@ -6367,17 +6378,6 @@
 		(uuid "b98af17a-dda1-4dfd-a424-1a311d924521")
 	)
 	(label "Switch 1"
-		(at 74.93 40.64 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c2769507-ce1e-4b30-95de-d95d43eb1c71")
-	)
-	(label "Switch 1"
 		(at 210.82 69.85 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6666,188 +6666,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SamacSys:EXB2HV103JV")
-		(at 74.93 25.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1023913c-3179-4ef0-8001-ab35e50c1ca5")
-		(property "Reference" "RN1"
-			(at 86.36 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "EXB2HV103JV"
-			(at 86.36 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EXB2HV104JV"
-			(at 93.98 120.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/EXB-2HV104JV.pdf"
-			(at 93.98 220.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RESISTOR,CVEX ARRAY,0402X8, 10K 5% ROHS COMPLIANT: YES"
-			(at 74.93 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.55"
-			(at 93.98 420.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Panasonic"
-			(at 93.98 520.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "EXB2HV103JV"
-			(at 93.98 620.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 93.98 720.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 93.98 820.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 93.98 920.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 93.98 1020.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "79edbe40-7acb-4bd5-b8ea-5cdaf20e616f")
-		)
-		(pin "5"
-			(uuid "10258210-6b00-48e7-a75b-0420f9878436")
-		)
-		(pin "13"
-			(uuid "bc0f5ebb-a6c9-46a7-be98-a5de3f4ce900")
-		)
-		(pin "16"
-			(uuid "8acdf954-d32e-49b3-b824-d4387a8a8d4f")
-		)
-		(pin "2"
-			(uuid "66960550-6f1c-437b-8b79-f1d7446eaedd")
-		)
-		(pin "3"
-			(uuid "2702c6a0-2166-4250-94e5-21544ff822f9")
-		)
-		(pin "6"
-			(uuid "30739ac2-b219-4b4e-8867-cf62a9af18a3")
-		)
-		(pin "7"
-			(uuid "73477b97-b43a-4c64-937a-5109e04f2872")
-		)
-		(pin "4"
-			(uuid "30aef205-629c-4fa1-b0ad-ba57e1134e0c")
-		)
-		(pin "11"
-			(uuid "e446e11a-03bd-470f-9313-69622361f739")
-		)
-		(pin "14"
-			(uuid "8bcaedd2-12db-4ae0-9053-3eab4768c03e")
-		)
-		(pin "8"
-			(uuid "9747a818-9d75-41c8-8636-f0aba8213d91")
-		)
-		(pin "9"
-			(uuid "7a8ce9b7-7bcf-4d4f-afb6-e0a273e53707")
-		)
-		(pin "12"
-			(uuid "ec161cdb-6364-415b-aa31-e2cfdda1899c")
-		)
-		(pin "10"
-			(uuid "5fbab2ee-757d-4151-9a8b-141be07d38ea")
-		)
-		(pin "15"
-			(uuid "ac1dc255-90f2-4f8a-b09d-5d52542340c0")
-		)
-		(instances
-			(project ""
-				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
-					(reference "RN1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 57.15 124.46 90)
 		(unit 1)
@@ -6939,7 +6757,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WP7113ID5V"
+		(property "Footprint" ""
 			(at 145.72 331.47 0)
 			(effects
 				(font
@@ -7145,6 +6963,188 @@
 			(project "buzzCatcher"
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "J16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys:4116R-1-121LF")
+		(at 250.19 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "19a68e95-6491-437f-90b7-b96ec6564e5c")
+		(property "Reference" "R1"
+			(at 261.62 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4116R-1-121LF"
+			(at 261.62 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "DIP787W49P254L2197H469Q16N"
+			(at 269.24 124.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.ch/datasheet/2/54/4100R-776985.pdf"
+			(at 269.24 224.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "BOURNS - 4116R-1-121LF - Fixed Network Resistor, 120 ohm, 4100R Series, 8 Elements, Isolated, DIP, 16 Pins"
+			(at 250.19 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "4.69"
+			(at 269.24 424.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Bourns"
+			(at 269.24 524.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "4116R-1-121LF"
+			(at 269.24 624.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "652-4116R-1LF-120"
+			(at 269.24 724.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/4116R-1-121LF?qs=10P5Hhl%252BD7%2FiVs%252BU8BCs6Q%3D%3D"
+			(at 269.24 824.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "4116R-1-121LF"
+			(at 269.24 924.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/4116r-1-121lf/bourns"
+			(at 269.24 1024.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "13"
+			(uuid "2e8c8b3f-7cbd-49e0-9752-057b819295ca")
+		)
+		(pin "10"
+			(uuid "84348e95-1775-43bf-abb4-49d433e5652c")
+		)
+		(pin "6"
+			(uuid "f91b29a1-82ff-4e3a-bf05-2efa30990d78")
+		)
+		(pin "8"
+			(uuid "d9fc1b07-7fb8-4e30-907d-73cd9e09475e")
+		)
+		(pin "1"
+			(uuid "80e98755-c3de-47c4-b652-6f633952f514")
+		)
+		(pin "5"
+			(uuid "1424d9ce-f433-4038-b579-c78f9a0ced9e")
+		)
+		(pin "14"
+			(uuid "3e623d94-4720-4bc9-87da-55655b8a1e0c")
+		)
+		(pin "12"
+			(uuid "d3397b59-8ace-47e4-8bf9-6c5d577c7d76")
+		)
+		(pin "2"
+			(uuid "827b5c6a-95c5-41f7-b7cd-f073d7b26736")
+		)
+		(pin "9"
+			(uuid "40498716-bfe3-4dba-90e0-2d1021238546")
+		)
+		(pin "11"
+			(uuid "01050903-cf31-4490-8738-f1eb6e3ca256")
+		)
+		(pin "16"
+			(uuid "6d09cbc0-5844-4908-81e6-cc1a54e3552a")
+		)
+		(pin "3"
+			(uuid "11851ac7-3b5d-4a49-baae-6817a87c1c58")
+		)
+		(pin "7"
+			(uuid "7e6de4be-0a01-43f3-8afd-66e70c48a811")
+		)
+		(pin "4"
+			(uuid "8c4b39a3-e079-42ab-8743-6cbf911e8fcd")
+		)
+		(pin "15"
+			(uuid "73d0ec57-cfa7-4212-9fa2-664534902c5e")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -7594,7 +7594,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "95501-2661"
+		(property "Footprint" ""
 			(at 144.45 237.49 0)
 			(effects
 				(font
@@ -8919,7 +8919,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WP7113ID5V"
+		(property "Footprint" ""
 			(at 31.75 387.02 0)
 			(effects
 				(font
@@ -9190,7 +9190,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WP7113ID5V"
+		(property "Footprint" ""
 			(at 92.71 387.02 0)
 			(effects
 				(font
@@ -9328,7 +9328,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WP7113ID5V"
+		(property "Footprint" ""
 			(at 31.75 313.36 0)
 			(effects
 				(font
@@ -9509,6 +9509,188 @@
 		)
 	)
 	(symbol
+		(lib_id "SamacSys:4116R-1-103FLF")
+		(at 74.93 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63b1a470-27bb-4db5-8f6d-25c81f2940b1")
+		(property "Reference" "RN2"
+			(at 86.36 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4116R-1-103FLF"
+			(at 86.36 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "DIP787W49P254L2197H469Q16N"
+			(at 93.98 120.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/data/global/pdfs/4100R.pdf"
+			(at 93.98 220.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor Networks & Arrays 10K OHM 16 PIN 1%"
+			(at 74.93 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "4.69"
+			(at 93.98 420.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Bourns"
+			(at 93.98 520.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "4116R-1-103FLF"
+			(at 93.98 620.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "652-4116R-001-103FLF"
+			(at 93.98 720.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/4116R-1-103FLF?qs=v1pTd5RMxMzVCdNQjiU%2FxA%3D%3D"
+			(at 93.98 820.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "4116R-1-103FLF"
+			(at 93.98 920.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/4116r-1-103flf/bourns"
+			(at 93.98 1020.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "16"
+			(uuid "8e59a5c5-9432-4900-8098-523d066651c2")
+		)
+		(pin "12"
+			(uuid "0fb4ffd6-d6ee-4d08-b8e7-f0d3d2b5cdfa")
+		)
+		(pin "14"
+			(uuid "b09921f3-9baa-4e1e-aa0d-178fda285533")
+		)
+		(pin "4"
+			(uuid "a9c0409a-4c64-44f4-9e58-001e1d04c507")
+		)
+		(pin "6"
+			(uuid "a4047fde-dff1-4f36-9635-5a12d23eacc3")
+		)
+		(pin "13"
+			(uuid "9dff2241-8e30-474a-91b6-b536cbbb1b4e")
+		)
+		(pin "8"
+			(uuid "71b6513c-2fae-4b08-8497-7c0445add2b8")
+		)
+		(pin "1"
+			(uuid "9ec3bdea-5b26-40a6-a3a5-000087b7b862")
+		)
+		(pin "10"
+			(uuid "2801de60-d2a2-4869-af5f-bba2c2ef3f72")
+		)
+		(pin "3"
+			(uuid "56ca21f4-c264-448b-b7ab-7c570cdb018d")
+		)
+		(pin "15"
+			(uuid "e28346c5-55c9-4dc1-a8d1-d45681eaee64")
+		)
+		(pin "7"
+			(uuid "80d160fa-2a67-41ab-87c5-f77f2b4ca655")
+		)
+		(pin "5"
+			(uuid "aac5fe71-f49b-4529-af82-9d72526f4d8e")
+		)
+		(pin "9"
+			(uuid "e8c850b8-47c4-44d8-b5a6-ca2df118e4d4")
+		)
+		(pin "2"
+			(uuid "7d9f2210-8026-4446-9aab-0eda896ea23a")
+		)
+		(pin "11"
+			(uuid "eb9b95f7-38d4-4e05-92ce-45dfcde57c72")
+		)
+		(instances
+			(project ""
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "RN2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 49.53 254 270)
 		(unit 1)
@@ -9668,188 +9850,6 @@
 			(project "buzzCatcher"
 				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
 					(reference "J15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SamacSys:EXB2HV121JV")
-		(at 250.19 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7c63ae04-36df-4a4b-b146-5b90956efec1")
-		(property "Reference" "RN3"
-			(at 261.62 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "EXB2HV121JV"
-			(at 261.62 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EXB2HV_1"
-			(at 269.24 154.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf"
-			(at 269.24 254.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor Networks & Arrays 120 OHM 5%"
-			(at 250.19 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" ""
-			(at 269.24 454.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Panasonic"
-			(at 269.24 554.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "EXB2HV121JV"
-			(at 269.24 654.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 269.24 754.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 269.24 854.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 269.24 954.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 269.24 1054.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "8294860c-2156-41d1-a386-7ebf967850c3")
-		)
-		(pin "11"
-			(uuid "cd10fb89-9681-41ce-8094-47d6268b9319")
-		)
-		(pin "10"
-			(uuid "aed649d7-5bc6-43ce-8dff-42d1a67102bc")
-		)
-		(pin "2"
-			(uuid "33c1e25a-a9e8-4cfd-bd4a-ee9415e0d8e0")
-		)
-		(pin "6"
-			(uuid "6fc848e4-92fd-4f1a-ab37-b75fe1fff638")
-		)
-		(pin "12"
-			(uuid "c2b2a8a8-eeac-4917-b5ae-57697d595df7")
-		)
-		(pin "1"
-			(uuid "1328d73c-3472-40f4-aa15-ec93fd023a3b")
-		)
-		(pin "16"
-			(uuid "4b04f649-0428-4212-b0f0-51ce1c2afd11")
-		)
-		(pin "13"
-			(uuid "662bc9c3-42f2-41e1-9074-5a1b39e57183")
-		)
-		(pin "9"
-			(uuid "d4858d4b-dd51-4d73-b72b-5fa9b5500ea4")
-		)
-		(pin "8"
-			(uuid "06b3501a-c1bd-4a9f-b463-8dfdd9c2e184")
-		)
-		(pin "5"
-			(uuid "df262404-79e2-4a44-973f-1ba093c5f433")
-		)
-		(pin "14"
-			(uuid "1c2e1e11-4d37-40a7-ada9-7bb88034a602")
-		)
-		(pin "3"
-			(uuid "cebf0c11-aa73-4f95-ae64-3c5a4d8c7c01")
-		)
-		(pin "15"
-			(uuid "745caafa-62d5-4dd7-94e9-1e604f01e2a8")
-		)
-		(pin "7"
-			(uuid "b2cc49ce-b0bd-4dd9-b35e-4f0edce7a895")
-		)
-		(instances
-			(project "buzzCatcher"
-				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
-					(reference "RN3")
 					(unit 1)
 				)
 			)
@@ -10259,7 +10259,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "95501-2661"
+		(property "Footprint" ""
 			(at 204.14 238.76 0)
 			(effects
 				(font
@@ -10413,7 +10413,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "95501-2661"
+		(property "Footprint" ""
 			(at 205.41 311.15 0)
 			(effects
 				(font
@@ -10936,7 +10936,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WP7113ID5V"
+		(property "Footprint" ""
 			(at 145.72 257.81 0)
 			(effects
 				(font
@@ -12295,7 +12295,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WP7113ID5V"
+		(property "Footprint" ""
 			(at 206.68 331.47 0)
 			(effects
 				(font
@@ -12433,7 +12433,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WP7113ID5V"
+		(property "Footprint" ""
 			(at 91.44 314.63 0)
 			(effects
 				(font
@@ -13898,188 +13898,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SamacSys:EXB2HV121JV")
-		(at 250.19 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dd4bade9-8b46-4adb-b92e-adbbb89bfccd")
-		(property "Reference" "RN2"
-			(at 261.62 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "EXB2HV121JV"
-			(at 261.62 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EXB2HV_1"
-			(at 269.24 124.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AOC0000/AOC0000C14.pdf"
-			(at 269.24 224.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor Networks & Arrays 120 OHM 5%"
-			(at 250.19 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" ""
-			(at 269.24 424.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Panasonic"
-			(at 269.24 524.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "EXB2HV121JV"
-			(at 269.24 624.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 269.24 724.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 269.24 824.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 269.24 924.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 269.24 1024.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "7bd3a6e5-0751-4eeb-a212-f043b8153854")
-		)
-		(pin "11"
-			(uuid "a9539934-0e96-489a-a4c2-e9d5a96f1748")
-		)
-		(pin "10"
-			(uuid "8ac1f343-8c4c-43cb-ba28-85a0bd841861")
-		)
-		(pin "2"
-			(uuid "c3b9cb47-de2e-4a9d-b9e2-4de27e7552cd")
-		)
-		(pin "6"
-			(uuid "5d5664c5-6ae7-456b-b4b1-5b93e7e8043c")
-		)
-		(pin "12"
-			(uuid "b9dbad7a-e4ca-48c5-81cb-47042ecaa62d")
-		)
-		(pin "1"
-			(uuid "d62af186-4666-4a76-958c-82ce126aa2fb")
-		)
-		(pin "16"
-			(uuid "bc73c6bc-ce04-4f4b-8b60-85499c649742")
-		)
-		(pin "13"
-			(uuid "6a5cedad-97d2-4ba6-995e-5ac449d3c192")
-		)
-		(pin "9"
-			(uuid "f6f81f44-34ec-46de-abfc-9d6318dde665")
-		)
-		(pin "8"
-			(uuid "6e8b3a28-27df-498c-964a-c8a772a1847d")
-		)
-		(pin "5"
-			(uuid "4df63512-30d2-4f23-b0a7-d1102c522903")
-		)
-		(pin "14"
-			(uuid "64a0d193-2c13-4db0-812b-031048779373")
-		)
-		(pin "3"
-			(uuid "b7d57488-05cf-4e8d-85aa-a0aeb52b748d")
-		)
-		(pin "15"
-			(uuid "f0db4320-a33d-4856-adee-09977c171f39")
-		)
-		(pin "7"
-			(uuid "75f862b3-c6fd-4abf-8dc2-aecc447f4232")
-		)
-		(instances
-			(project ""
-				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
-					(reference "RN2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "SamacSys:BS170")
 		(at 33.02 69.85 0)
 		(unit 1)
@@ -14440,6 +14258,188 @@
 		)
 	)
 	(symbol
+		(lib_id "SamacSys:4116R-1-121LF")
+		(at 250.19 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ecfcf4db-5d95-4c98-9044-e1788c814ea8")
+		(property "Reference" "R2"
+			(at 261.62 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4116R-1-121LF"
+			(at 261.62 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "DIP787W49P254L2197H469Q16N"
+			(at 269.24 154.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.ch/datasheet/2/54/4100R-776985.pdf"
+			(at 269.24 254.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "BOURNS - 4116R-1-121LF - Fixed Network Resistor, 120 ohm, 4100R Series, 8 Elements, Isolated, DIP, 16 Pins"
+			(at 250.19 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "4.69"
+			(at 269.24 454.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Bourns"
+			(at 269.24 554.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "4116R-1-121LF"
+			(at 269.24 654.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "652-4116R-1LF-120"
+			(at 269.24 754.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/4116R-1-121LF?qs=10P5Hhl%252BD7%2FiVs%252BU8BCs6Q%3D%3D"
+			(at 269.24 854.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Part Number" "4116R-1-121LF"
+			(at 269.24 954.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/4116r-1-121lf/bourns"
+			(at 269.24 1054.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "13"
+			(uuid "0bb5e382-91c3-411b-a6ad-2a9f1f0f2924")
+		)
+		(pin "10"
+			(uuid "4bd6cab5-54f5-40ed-9c98-58b6e4f832a6")
+		)
+		(pin "6"
+			(uuid "3498c7a0-0a70-4fad-90e6-e908b1752f0f")
+		)
+		(pin "8"
+			(uuid "4b468f11-4191-467d-b74a-3b0297761584")
+		)
+		(pin "1"
+			(uuid "dc32b03f-1adb-4342-b447-70c245e6aa73")
+		)
+		(pin "5"
+			(uuid "906bcc48-6971-4c90-abd4-d412b09acd67")
+		)
+		(pin "14"
+			(uuid "9a11bc07-9349-43d6-90f8-6201d0bd09b5")
+		)
+		(pin "12"
+			(uuid "168054f9-8279-4354-b36f-ace9d5a9ce86")
+		)
+		(pin "2"
+			(uuid "ca3a5cd2-9b36-4bd7-b7e0-8e43494ca6af")
+		)
+		(pin "9"
+			(uuid "7b8eaf1b-d0f3-4ac0-a8bd-c6a3da6d776f")
+		)
+		(pin "11"
+			(uuid "408bc7eb-cb7d-4748-8689-0ee46da042dc")
+		)
+		(pin "16"
+			(uuid "96f4be6d-3295-4f0e-bdee-82e6fcc274e9")
+		)
+		(pin "3"
+			(uuid "e3e306ab-d18e-4675-a9d0-46cd36bd2946")
+		)
+		(pin "7"
+			(uuid "aa54caba-2a3f-4270-92dd-63baa1285822")
+		)
+		(pin "4"
+			(uuid "b2865499-47e7-4c36-ac65-b39159562f1a")
+		)
+		(pin "15"
+			(uuid "7c3e7981-2da3-43b2-8e8d-296e0e3e87bf")
+		)
+		(instances
+			(project "buzzCatcher"
+				(path "/7ff16773-e8bc-4e88-bf37-0df499448a9a"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 78.74 220.98 270)
 		(unit 1)
@@ -14599,7 +14599,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "95501-2661"
+		(property "Footprint" ""
 			(at 144.45 311.15 0)
 			(effects
 				(font
@@ -14750,7 +14750,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WP7113ID5V"
+		(property "Footprint" ""
 			(at 205.41 259.08 0)
 			(effects
 				(font
