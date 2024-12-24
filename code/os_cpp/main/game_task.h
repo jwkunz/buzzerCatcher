@@ -30,11 +30,15 @@ private:
     const uint8_t LED_WAIT_TRIGGER = PIN_LED_5;
     const uint8_t LED_WAIT_CLEAR = PIN_LED_6;
 
+    const MicrosTrackType BUZZER_FREQ_HZ = 1000;
+    const MicrosTrackType BUZZER_HALF_PERIOD_MICROS = 1E6 / BUZZER_FREQ_HZ / 2;
+    MicrosTrackType buzz_time_tracker;
+    bool buzzer_value;
+
     uint8_t responded = 4;
 
     void display_responded()
     {
-
         digitalWrite(LED_USER_0, (0 == responded));
         digitalWrite(LED_USER_1, (1 == responded));
         digitalWrite(LED_USER_2, (2 == responded));
@@ -58,14 +62,19 @@ public:
     {
         // Interpret the args
         TickArgsType io_objects = *(TickArgsType *)args;
-
+        // Default to stay in current state
         GameStateType next_state = current_state;
+
+        // Game state machine
         switch (current_state)
         {
+
+        // Initialization
         case POWER_UP:
         {
             // Set all IO low
             digitalWrite(PIN_READY, LOW);
+            digitalWrite(PIN_BUZZER, LOW);
             analogWrite(PIN_LED_0, LED_OFF);
             analogWrite(PIN_LED_1, LED_OFF);
             analogWrite(PIN_LED_2, LED_OFF);
@@ -74,12 +83,15 @@ public:
             analogWrite(PIN_LED_5, LED_OFF);
             analogWrite(PIN_LED_6, LED_OFF);
             analogWrite(PIN_LED_7, LED_OFF);
-            next_state = POWER_UP;
+            next_state = WAIT_ARM_0;
             break;
         }
+
+        // Wait for the button to go high
         case WAIT_ARM_0:
         {
-            analogWrite(LED_WAIT_ARM, LED_ON);
+            analogWrite(LED_WAIT_ARM, LED_ON); // Signal state
+            // Check button
             bool val = io_objects.pin_button->get_current_value();
             if (val)
             {
@@ -87,20 +99,27 @@ public:
             }
             break;
         }
+
+        // Wait for the button to go low
         case WAIT_ARM_1:
         {
-            analogWrite(LED_WAIT_ARM, LED_ON);
+            analogWrite(LED_WAIT_ARM, LED_ON); // Signal state
+            // Check button
             bool val = io_objects.pin_button->get_current_value();
             if (!val)
             {
                 analogWrite(LED_WAIT_ARM, LED_OFF);
                 next_state = WAIT_TRIGGER_0;
+                buzz_time_tracker = 0;
+                buzzer_value = false;
             }
             break;
         }
+        // Wait for a trigger to go high and arbitrate first
         case WAIT_TRIGGER_0:
         {
-            analogWrite(LED_WAIT_TRIGGER, LED_ON);
+            analogWrite(LED_WAIT_TRIGGER, LED_ON); // Signal state
+
             // Look for a response in rapid succession
             // NOTE: Fair arbitration implemented below
             bool response_0 = io_objects.trigger_0->get_current_value();
@@ -162,16 +181,26 @@ public:
                     if (scores[i] > best_score)
                     {
                         best_score = scores[i];
-                        this->responded = i;
+                        this->responded = i; // Updated
                     }
                 }
             }
             break;
         }
+        // Wait for a trigger to go low and drive the buzzer
         case WAIT_TRIGGER_1:
         {
-            analogWrite(LED_WAIT_TRIGGER, LED_ON);
-            this->display_responded();
+            analogWrite(LED_WAIT_TRIGGER, LED_ON); // Signal state
+            this->display_responded();             // Signal the owner
+
+            // Run buzzer while the trigger is still high
+            buzz_time_tracker += micros_since_last_call;
+            if (buzz_time_tracker > BUZZER_HALF_PERIOD_MICROS)
+            {
+                buzz_time_tracker -= BUZZER_HALF_PERIOD_MICROS;
+                digitalWrite(PIN_BUZZER, buzzer_value);
+                buzzer_value != buzzer_value;
+            }
 
             // Look for a response in rapid succession
             // NOTE: Fair arbitration implemented below
@@ -189,10 +218,14 @@ public:
             }
             break;
         }
+
+        // Wait for the clear to go high
         case WAIT_CLEAR_0:
         {
-            analogWrite(LED_WAIT_CLEAR, LED_ON);
-            this->display_responded();
+            analogWrite(LED_WAIT_CLEAR, LED_ON); // Signal state
+            this->display_responded();           // Signal the owner
+
+            // Check the button state
             bool val = io_objects.pin_button->get_current_value();
             if (val)
             {
@@ -200,10 +233,13 @@ public:
             }
             break;
         }
+        // Wait for the clear to go low
         case WAIT_CLEAR_1:
         {
-            analogWrite(LED_WAIT_CLEAR, LED_ON);
-            this->display_responded();
+            analogWrite(LED_WAIT_CLEAR, LED_ON); // Signal state
+            this->display_responded();           // Signal the owner
+
+            // Check the button
             bool val = io_objects.pin_button->get_current_value();
             if (!val)
             {
@@ -212,6 +248,8 @@ public:
             }
             break;
         }
+
+        // Should not occur
         default:
         {
             // ERROR CASE
