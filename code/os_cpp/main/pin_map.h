@@ -1,3 +1,4 @@
+#pragma once
 #define PIN_READY 5
 #define PIN_TRIGGER_1 6
 #define PIN_TRIGGER_2 7

@@ -1,8 +1,9 @@
+#pragma once
 #include "arduino.h"
 #include "pin_map.h"
-#include <stdint.h>
+#include "task_interface.h"
 
-class game_task
+class game_task : public task_interface
 {
 private:
     typedef enum
@@ -40,8 +41,8 @@ private:
     }
 
 public:
-    void
-    tick()
+    status_code_t
+    tick(uint32_t micros_since_last_call)
     {
         game_state_t next_state = current_state;
         switch (current_state)
@@ -196,9 +197,11 @@ public:
         {
             // ERROR CASE
             next_state = POWER_UP;
+            return GENERIC_ERROR;
             break;
         }
         }
         current_state = next_state;
+        return SUCCESS;
     }
 };

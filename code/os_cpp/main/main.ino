@@ -1,9 +1,12 @@
 #include "pin_map.h"
+#include "task_interface.h"
 #include "game_task.h"
 #include <TimerOne.h>
 
+static const uint32_t micros_per_tick = 10000;
+
 // Tasks
-game_task GT1;
+task_interface GameTask1;
 
 void setup() {
   // Serial monitor
@@ -35,7 +38,7 @@ void setup() {
   randomSeed(analogRead(0));
 
   // Interupt Timer
-  Timer1.initialize(10000);
+  Timer1.initialize(micros_per_tick);
   Timer1.attachInterrupt(tick_function); // blinkLED to run every 0.15 seconds
 }
 
@@ -43,5 +46,5 @@ void loop() {
 }
 
 void tick_function(){
-  GT1.tick();
+  GameTask1.tick(micros_per_tick);
 }
