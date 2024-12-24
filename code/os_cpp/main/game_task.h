@@ -34,7 +34,7 @@ private:
     const MicrosTrackType BUZZER_HALF_PERIOD_MICROS = 1E6 / BUZZER_FREQ_HZ / 2;
     MicrosTrackType buzz_time_tracker;
     bool buzzer_value;
-
+    bool responses[4];
     uint8_t responded = 4;
 
     void display_responded()
@@ -60,8 +60,6 @@ public:
     tick(MicrosTrackType micros_since_last_call,
          void *args)
     {
-        // Interpret the args
-        TickArgsType io_objects = *(TickArgsType *)args;
         // Default to stay in current state
         GameStateType next_state = current_state;
 
@@ -92,7 +90,7 @@ public:
         {
             analogWrite(LED_WAIT_ARM, LED_ON); // Signal state
             // Check button
-            bool val = io_objects.pin_button->get_current_value();
+            bool val = ((TickArgsType *)args)->pin_button->get_current_value();
             if (val)
             {
                 next_state = WAIT_ARM_1;
@@ -105,7 +103,7 @@ public:
         {
             analogWrite(LED_WAIT_ARM, LED_ON); // Signal state
             // Check button
-            bool val = io_objects.pin_button->get_current_value();
+            bool val = ((TickArgsType *)args)->pin_button->get_current_value();
             if (!val)
             {
                 analogWrite(LED_WAIT_ARM, LED_OFF);
@@ -122,11 +120,7 @@ public:
 
             // Look for a response in rapid succession
             // NOTE: Fair arbitration implemented below
-            bool response_0 = io_objects.trigger_0->get_current_value();
-            bool response_1 = io_objects.trigger_1->get_current_value();
-            bool response_2 = io_objects.trigger_2->get_current_value();
-            bool response_3 = io_objects.trigger_3->get_current_value();
-            bool responded = response_0 | response_1 | response_2 | response_3;
+            bool responded = this->get_responses((TickArgsType *)args);
 
             // Someone responded
             if (responded)
@@ -140,48 +134,17 @@ public:
                 // Everyone who responded within this tick gets a random score > 0
                 // The winner is the person with highest score (who responded)
 
-                uint8_t scores[4];
-                if (response_0)
-                {
-                    scores[0] = random(1, 0xff);
-                }
-                else
-                {
-                    scores[0] = 0;
-                }
-                if (response_1)
-                {
-                    scores[1] = random(1, 0xff);
-                }
-                else
-                {
-                    scores[1] = 0;
-                }
-                if (response_2)
-                {
-                    scores[2] = random(1, 0xff);
-                }
-                else
-                {
-                    scores[2] = 0;
-                }
-                if (response_3)
-                {
-                    scores[3] = random(1, 0xff);
-                }
-                else
-                {
-                    scores[3] = 0;
-                }
-
-                // Get best
-                uint8_t best_score = 0;
+                uint8_t best_score = 0; // Get best
                 for (uint8_t i = 0; i < 4; ++i)
                 {
-                    if (scores[i] > best_score)
+                    if (this->responses[i])
                     {
-                        best_score = scores[i];
-                        this->responded = i; // Updated
+                        uint8_t score = random(0xff);
+                        if (score > best_score)
+                        {
+                            best_score = score;
+                            this->responded = i; // Updated
+                        }
                     }
                 }
             }
@@ -202,13 +165,8 @@ public:
                 buzzer_value != buzzer_value;
             }
 
-            // Look for a response in rapid succession
-            // NOTE: Fair arbitration implemented below
-            bool response_0 = io_objects.trigger_0->get_current_value();
-            bool response_1 = io_objects.trigger_1->get_current_value();
-            bool response_2 = io_objects.trigger_2->get_current_value();
-            bool response_3 = io_objects.trigger_3->get_current_value();
-            bool responded = response_0 | response_1 | response_2 | response_3;
+            // Look for a response is still on
+            bool responded = this->get_responses((TickArgsType *)args);
 
             // Check if all the triggers are low
             if (!responded)
@@ -226,7 +184,7 @@ public:
             this->display_responded();           // Signal the owner
 
             // Check the button state
-            bool val = io_objects.pin_button->get_current_value();
+            bool val = ((TickArgsType *)args)->pin_button->get_current_value();
             if (val)
             {
                 next_state = WAIT_CLEAR_1;
@@ -240,7 +198,7 @@ public:
             this->display_responded();           // Signal the owner
 
             // Check the button
-            bool val = io_objects.pin_button->get_current_value();
+            bool val = ((TickArgsType *)args)->pin_button->get_current_value();
             if (!val)
             {
                 analogWrite(LED_WAIT_CLEAR, LED_OFF);
@@ -260,5 +218,23 @@ public:
         }
         current_state = next_state;
         return SUCCESS;
+    }
+
+private:
+    bool get_responses(TickArgsType *io_objects)
+    {
+        this->responses[0] = io_objects->trigger_0->get_current_value();
+        this->responses[1] = io_objects->trigger_1->get_current_value();
+        this->responses[2] = io_objects->trigger_2->get_current_value();
+        this->responses[3] = io_objects->trigger_3->get_current_value();
+        // reduction or
+        for (uint8_t i = 0; i < 4; ++i)
+        {
+            if (this->responses[i])
+            {
+                return true;
+            }
+        }
+        return false;
     }
 };
