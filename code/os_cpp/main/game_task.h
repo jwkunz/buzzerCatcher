@@ -2,8 +2,9 @@
 #include "arduino.h"
 #include "pin_map.h"
 #include "task_interface.h"
+#include "pin_debouncer.h"
 
-class game_task : public task_interface
+class GameTask : public TaskInterface
 {
 private:
     typedef enum
@@ -15,9 +16,9 @@ private:
         WAIT_TRIGGER_1,
         WAIT_CLEAR_0,
         WAIT_CLEAR_1,
-    } game_state_t;
+    } GameStateType;
 
-    game_state_t current_state = POWER_UP;
+    GameStateType current_state = POWER_UP;
 
     const uint8_t LED_OFF = 0x00;
     const uint8_t LED_ON = 0xFF;
@@ -41,10 +42,24 @@ private:
     }
 
 public:
-    status_code_t
-    tick(uint32_t micros_since_last_call)
+    typedef struct
     {
-        game_state_t next_state = current_state;
+        PinDebouncer *pin_button;
+        PinDebouncer *pin_switch;
+        PinDebouncer *trigger_0;
+        PinDebouncer *trigger_1;
+        PinDebouncer *trigger_2;
+        PinDebouncer *trigger_3;
+    } TickArgsType;
+
+    StatusCodeType
+    tick(MicrosTrackType micros_since_last_call,
+         void *args)
+    {
+        // Interpret the args
+        TickArgsType io_objects = *(TickArgsType *)args;
+
+        GameStateType next_state = current_state;
         switch (current_state)
         {
         case POWER_UP:
@@ -65,7 +80,8 @@ public:
         case WAIT_ARM_0:
         {
             analogWrite(LED_WAIT_ARM, LED_ON);
-            if (digitalRead(PIN_BUTTON))
+            bool val = io_objects.pin_button->get_current_value();
+            if (val)
             {
                 next_state = WAIT_ARM_1;
             }
@@ -74,7 +90,8 @@ public:
         case WAIT_ARM_1:
         {
             analogWrite(LED_WAIT_ARM, LED_ON);
-            if (!digitalRead(PIN_BUTTON))
+            bool val = io_objects.pin_button->get_current_value();
+            if (!val)
             {
                 analogWrite(LED_WAIT_ARM, LED_OFF);
                 next_state = WAIT_TRIGGER_0;
@@ -86,10 +103,10 @@ public:
             analogWrite(LED_WAIT_TRIGGER, LED_ON);
             // Look for a response in rapid succession
             // NOTE: Fair arbitration implemented below
-            bool response_0 = digitalRead(PIN_TRIGGER_1);
-            bool response_1 = digitalRead(PIN_TRIGGER_2);
-            bool response_2 = digitalRead(PIN_TRIGGER_3);
-            bool response_3 = digitalRead(PIN_TRIGGER_4);
+            bool response_0 = io_objects.trigger_0->get_current_value();
+            bool response_1 = io_objects.trigger_1->get_current_value();
+            bool response_2 = io_objects.trigger_2->get_current_value();
+            bool response_3 = io_objects.trigger_3->get_current_value();
             bool responded = response_0 | response_1 | response_2 | response_3;
 
             // Someone responded
@@ -158,10 +175,10 @@ public:
 
             // Look for a response in rapid succession
             // NOTE: Fair arbitration implemented below
-            bool response_0 = digitalRead(PIN_TRIGGER_1);
-            bool response_1 = digitalRead(PIN_TRIGGER_2);
-            bool response_2 = digitalRead(PIN_TRIGGER_3);
-            bool response_3 = digitalRead(PIN_TRIGGER_4);
+            bool response_0 = io_objects.trigger_0->get_current_value();
+            bool response_1 = io_objects.trigger_1->get_current_value();
+            bool response_2 = io_objects.trigger_2->get_current_value();
+            bool response_3 = io_objects.trigger_3->get_current_value();
             bool responded = response_0 | response_1 | response_2 | response_3;
 
             // Check if all the triggers are low
@@ -176,7 +193,8 @@ public:
         {
             analogWrite(LED_WAIT_CLEAR, LED_ON);
             this->display_responded();
-            if (digitalRead(PIN_BUTTON))
+            bool val = io_objects.pin_button->get_current_value();
+            if (val)
             {
                 next_state = WAIT_CLEAR_1;
             }
@@ -186,7 +204,8 @@ public:
         {
             analogWrite(LED_WAIT_CLEAR, LED_ON);
             this->display_responded();
-            if (!digitalRead(PIN_BUTTON))
+            bool val = io_objects.pin_button->get_current_value();
+            if (!val)
             {
                 analogWrite(LED_WAIT_CLEAR, LED_OFF);
                 next_state = WAIT_ARM_0;

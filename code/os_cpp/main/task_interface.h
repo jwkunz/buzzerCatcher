@@ -1,7 +1,7 @@
 #pragma once
 #include <stdint.h>
 
-class task_interface
+class TaskInterface
 {
 public:
     typedef enum
@@ -9,8 +9,11 @@ public:
         SUCCESS,
         FAILURE,
         GENERIC_ERROR
-    } status_code_t;
+    } StatusCodeType;
 
-    virtual status_code_t tick(
-        uint32_t micros_since_last_call) {};
+    typedef uint32_t MicrosTrackType;
+
+    virtual StatusCodeType tick(
+        MicrosTrackType micros_since_last_call,
+        void *args) {};
 };
