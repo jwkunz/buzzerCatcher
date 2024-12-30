@@ -1,10 +1,7 @@
 #pragma once
 #include "task_interface.h"
 
-// Edit this to grow the capacity
-#define ROUND_ROBIN_MAX_TASKS 8
-
-class RoundRobinOS {
+template<unsigned int ROUND_ROBIN_MAX_TASKS> class RoundRobinOS {
 private:
 
   typedef struct {

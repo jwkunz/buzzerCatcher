@@ -7,7 +7,7 @@
 static const uint32_t micros_for_stable_io = 100000;
 
 // OS
-RoundRobinOS rros;
+RoundRobinOS<8> rros;
 
 // Tasks
 GameTask GameTasker;
