@@ -1,23 +1,39 @@
 #include "pin_map.h"
 #include "task_interface.h"
 #include "game_task.h"
+#include "round_robin_os.h"
+#include "loop_count_print.h"
 
 static const uint32_t micros_for_stable_io = 100000;
-uint64_t last_time;
+
+// OS
+RoundRobinOS rros;
 
 // Tasks
-GameTask GameTask1;
+GameTask GameTasker;
 PinDebouncer ButtonDebouncer;
 PinDebouncer SwitchDebouncer;
 PinDebouncer Trigger0Debouncer;
 PinDebouncer Trigger1Debouncer;
 PinDebouncer Trigger2Debouncer;
 PinDebouncer Trigger3Debouncer;
+LoopCountPrint LoopCountPrinter;
 
-void setup()
-{
+// Args
+GameTask::TickArgsType GameTaskArgs;
+
+void error_handler(String &message) {
+  Serial.println("Error: " + message);
+  while (true) {};
+}
+
+void print_handler(String &message) {
+  Serial.println(message);
+}
+
+void setup() {
   // Serial monitor
-  Serial.begin(9600);
+  Serial.begin(250000);
 
   // Set the pin modes
   pinMode(PIN_READY, OUTPUT);
@@ -46,39 +62,47 @@ void setup()
 
   // Setup Tasks
   ButtonDebouncer.set(PIN_BUTTON, micros_for_stable_io);
+
   SwitchDebouncer.set(PIN_SWITCH, micros_for_stable_io);
   Trigger0Debouncer.set(PIN_TRIGGER_1, micros_for_stable_io);
   Trigger1Debouncer.set(PIN_TRIGGER_2, micros_for_stable_io);
   Trigger2Debouncer.set(PIN_TRIGGER_3, micros_for_stable_io);
   Trigger3Debouncer.set(PIN_TRIGGER_4, micros_for_stable_io);
 
-  uint64_t last_time = micros();
-}
-
-void loop()
-{
-  // Track loop timing
-  uint64_t current_time = micros();
-  uint32_t loop_time = current_time - last_time;
-  last_time = current_time;
-
-  // Round Robin scheduling
-
-  // Do IO debouncers first
-  ButtonDebouncer.tick(loop_time, NULL);
-  SwitchDebouncer.tick(loop_time, NULL);
-  Trigger0Debouncer.tick(loop_time, NULL);
-  Trigger1Debouncer.tick(loop_time, NULL);
-  Trigger2Debouncer.tick(loop_time, NULL);
-  Trigger3Debouncer.tick(loop_time, NULL);
+  ButtonDebouncer.set_name("Button Debouncer");
+  SwitchDebouncer.set_name("Switch Debouncer");
+  Trigger0Debouncer.set_name("Trigger 0 Debouncer");
+  Trigger1Debouncer.set_name("Trigger 1 Debouncer");
+  Trigger2Debouncer.set_name("Trigger 2 Debouncer");
+  Trigger3Debouncer.set_name("Trigger 3 Debouncer");
+  GameTasker.set_name("Game Tasker");
+  LoopCountPrinter.set_name("Loop Count Printer");
 
   // Call the game task with the required IO args
   GameTask::TickArgsType GameTaskArgs = {
-      &ButtonDebouncer,
-      &SwitchDebouncer,
-      &Trigger0Debouncer,
-      &Trigger1Debouncer,
-      &Trigger2Debouncer,
-      &Trigger3Debouncer};
-  GameTask1.tick(loop_time, (void *)&GameTaskArgs);
+    &ButtonDebouncer,
+    &SwitchDebouncer,
+    &Trigger0Debouncer,
+    &Trigger1Debouncer,
+    &Trigger2Debouncer,
+    &Trigger3Debouncer
+  };
+
+  // Load up the scheduler
+  rros.push_task(&ButtonDebouncer, NULL);
+  rros.push_task(&SwitchDebouncer, NULL);
+  rros.push_task(&Trigger0Debouncer, NULL);
+  rros.push_task(&Trigger1Debouncer, NULL);
+  rros.push_task(&Trigger2Debouncer, NULL);
+  rros.push_task(&Trigger3Debouncer, NULL);
+  rros.push_task(&GameTasker, (void *)&GameTaskArgs);
+  rros.push_task(&LoopCountPrinter, NULL);
+
+  rros.set_error_handler_functions(&error_handler);
+  rros.set_print_handler_functions(&print_handler);
+}
+
+void loop() {
+  // Round Robin scheduling
+  rros.tick();
 }
