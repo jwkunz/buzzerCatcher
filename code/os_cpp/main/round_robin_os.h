@@ -24,6 +24,7 @@ public:
     }
     this->tasks[this->n_tasks] = { task_object, task_args };
     this->n_tasks += 1;
+    return true;
   }
   bool pop_task(TaskInterface* task_object, void* task_args) {
     if (n_tasks == 0) {

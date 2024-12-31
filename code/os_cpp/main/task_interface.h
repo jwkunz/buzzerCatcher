@@ -37,18 +37,18 @@ protected:
 
   void print(String message) {
     if (this->print_handler != NULL) {
-      (*print_handler)("Task \"" + name + "\" says: " + message);
+      (*print_handler)("Task \'" + name + "\' says: \'" + message + "\'");
     }
   }
 
   void error(String message) {
     if (this->error_handler != NULL) {
-      (*error_handler)("ERROR: Task \"" + name + "\" says: " + message);
+      (*error_handler)("Task \'" + name + "\' has error \'" + message + "\'");
       ;
     }
   }
 
   virtual void tick(
-    MicrosTrackType micros_since_last_call,
-    void *args){};
+    MicrosTrackType,
+    void *){};
 };

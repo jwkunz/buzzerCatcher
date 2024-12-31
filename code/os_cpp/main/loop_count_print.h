@@ -11,7 +11,7 @@ public:
   void set_limit(uint32_t limit) {
     this->limit = limit;
   }
-  void reset(uint32_t limit) {
+  void reset() {
     this->current_value = 0;
     this->accumulated_time = 0;
   }

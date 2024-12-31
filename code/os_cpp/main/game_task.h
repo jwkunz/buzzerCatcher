@@ -149,7 +149,7 @@ public:
           if (buzz_time_tracker > BUZZER_HALF_PERIOD_MICROS) {
             buzz_time_tracker -= BUZZER_HALF_PERIOD_MICROS;
             digitalWrite(PIN_BUZZER, buzzer_value);
-            buzzer_value != buzzer_value;
+            buzzer_value = !buzzer_value;
           }
 
           // Look for a response is still on

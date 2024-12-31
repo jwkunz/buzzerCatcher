@@ -28,7 +28,7 @@ void error_handler(String &message) {
 }
 
 void print_handler(String &message) {
-  Serial.println(message);
+  Serial.println("Print: " + message);
 }
 
 void setup() {
