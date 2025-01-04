@@ -4692,6 +4692,10 @@
 		(uuid "206cd176-72f6-4e4d-9bdc-1f07a61934b3")
 	)
 	(no_connect
+		(at 124.46 153.67)
+		(uuid "2f70f2d7-bc46-4d72-984e-1e4545e89801")
+	)
+	(no_connect
 		(at 224.79 240.03)
 		(uuid "319214bf-b988-45ad-99d8-a4fd82afd779")
 	)
@@ -4744,12 +4748,8 @@
 		(uuid "c89d631c-b1d0-4f75-a614-5eb2b29e12ea")
 	)
 	(no_connect
-		(at 154.94 153.67)
-		(uuid "cb71ecb4-5e5e-476e-b635-39a07b797a1c")
-	)
-	(no_connect
-		(at 124.46 153.67)
-		(uuid "f3ca143d-c601-4f5b-b830-71be7e2254bb")
+		(at 124.46 156.21)
+		(uuid "f3a3efca-5095-4c9e-9bb8-8765cbbeedde")
 	)
 	(wire
 		(pts
@@ -6048,17 +6048,6 @@
 		(uuid "2fd05548-43e6-4db7-9718-49b2cfe7d00c")
 	)
 	(label "Button 1"
-		(at 124.46 156.21 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "31241503-c5ef-45a4-a635-03ce23424237")
-	)
-	(label "Button 1"
 		(at 74.93 38.1 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6420,6 +6409,17 @@
 			(justify left bottom)
 		)
 		(uuid "dda4982e-d42d-4123-a833-c45f7e6c17e6")
+	)
+	(label "Button 1"
+		(at 154.94 153.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e05f1680-14fd-4cbc-8442-d4e52e12d5b8")
 	)
 	(label "Switch 1"
 		(at 140.97 86.36 180)
@@ -12049,10 +12049,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "5b4a9956-b9c1-47b3-824d-40640544bebe")
+			(uuid "5b4a9956-b9c1-47b3-824d-40640544bebf")
 		)
 		(pin "2"
-			(uuid "a845669b-2d9a-445b-823a-398b629d5985")
+			(uuid "a845669b-2d9a-445b-823a-398b629d5986")
 		)
 		(instances
 			(project ""
@@ -12189,10 +12189,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "5b4a9956-b9c1-47b3-824d-40640544bebe")
+			(uuid "5b4a9956-b9c1-47b3-824d-40640544bec0")
 		)
 		(pin "2"
-			(uuid "a845669b-2d9a-445b-823a-398b629d5985")
+			(uuid "a845669b-2d9a-445b-823a-398b629d5987")
 		)
 		(instances
 			(project ""
