@@ -1,3 +1,10 @@
+/*
+    The resource manager task makes sure a pin value is stable for a number of microseconds before reporting it's value change
+
+    Copyright January 2025 Dr. Jakob W. Kunzler
+    This file is licensed under the terms of the MIT LICENSE
+*/
+
 #pragma once
 #include "arduino.h"
 #include "pin_map.h"
@@ -11,6 +18,7 @@ private:
   MicrosTrackType current_micros;
 
 public:
+ // Configure the pin number and how many microseconds to consider stable
   void set(uint8_t pin_number, MicrosTrackType micros_for_stable) {
     this->current_value = false;
     this->pin_number = pin_number;
@@ -33,7 +41,7 @@ public:
       this->current_micros += micros_since_last_call;
       // If deviated for long enough
       if (this->current_micros > this->micros_for_stable) {
-#ifdef VERBOSE_MODE
+#ifdef DEBUG_MODE
         this->print("Pin changed values");
 #endif
         // Update state

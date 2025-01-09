@@ -1,3 +1,10 @@
+/*
+    These are the pins of the arduino nano on the buzzer control board
+
+    Copyright January 2025 Dr. Jakob W. Kunzler
+    This file is licensed under the terms of the MIT LICENSE
+*/
+
 #pragma once
 #define PIN_READY 2
 #define PIN_TRIGGER_1 3

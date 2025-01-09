@@ -1,14 +1,22 @@
-#define VERBOSE_MODE
+/*
+    This file is the top level function for the arduino framework to initialize everything and start the operating system
+
+    Copyright January 2025 Dr. Jakob W. Kunzler
+    This file is licensed under the terms of the MIT LICENSE
+*/
+
+#define DEBUG_MODE
 #include "pin_map.h"
 #include "task_interface.h"
 #include "game_task.h"
 #include "round_robin_os.h"
-#include "loop_count_print.h"
+#include "loop_speedometer.h"
 
+// Determines how long is a stable value on a pin
 static const uint32_t micros_for_stable_io = 100000;
 
 // OS
-RoundRobinOS<8> rros;
+RoundRobinOS<8> RRos;
 
 // Tasks
 GameTask GameTasker;
@@ -19,8 +27,8 @@ PinDebouncer Trigger1Debouncer;
 PinDebouncer Trigger2Debouncer;
 PinDebouncer Trigger3Debouncer;
 
-#ifdef VERBOSE_MODE
-LoopCountPrint LoopCountPrinter;
+#ifdef DEBUG_MODE
+LoopSpeedometer LoopSpeedometerObj;
 #endif
 
 // Args
@@ -73,6 +81,8 @@ void setup() {
   Trigger2Debouncer.set(PIN_TRIGGER_3, micros_for_stable_io);
   Trigger3Debouncer.set(PIN_TRIGGER_4, micros_for_stable_io);
 
+#ifdef DEBUG_MODE
+  // Give the tasks human readable names
   ButtonDebouncer.set_name("Button Debouncer");
   SwitchDebouncer.set_name("Switch Debouncer");
   Trigger0Debouncer.set_name("Trigger 0 Debouncer");
@@ -81,8 +91,7 @@ void setup() {
   Trigger3Debouncer.set_name("Trigger 3 Debouncer");
   GameTasker.set_name("Game Tasker");
 
-#ifdef VERBOSE_MODE
-  LoopCountPrinter.set_name("Loop Count Printer");
+  LoopSpeedometerObj.set_name("Loop Count Printer");
 #endif
 
   // Call the game task with the required IO args
@@ -95,24 +104,27 @@ void setup() {
     &Trigger3Debouncer
   };
 
+  // Printing
+  RRos.set_print_handler_functions(&print_handler);
+  // Errors
+  RRos.set_error_handler_functions(&error_handler);
+
   // Load up the scheduler
-  rros.push_task(&ButtonDebouncer, NULL);
-  rros.push_task(&SwitchDebouncer, NULL);
-  rros.push_task(&Trigger0Debouncer, NULL);
-  rros.push_task(&Trigger1Debouncer, NULL);
-  rros.push_task(&Trigger2Debouncer, NULL);
-  rros.push_task(&Trigger3Debouncer, NULL);
-  rros.push_task(&GameTasker, (void *)&GameTaskArgs);
+  RRos.push_task(&ButtonDebouncer, NULL);
+  RRos.push_task(&SwitchDebouncer, NULL);
+  RRos.push_task(&Trigger0Debouncer, NULL);
+  RRos.push_task(&Trigger1Debouncer, NULL);
+  RRos.push_task(&Trigger2Debouncer, NULL);
+  RRos.push_task(&Trigger3Debouncer, NULL);
+  RRos.push_task(&GameTasker, (void *)&GameTaskArgs);
 
-#ifdef VERBOSE_MODE
-  rros.push_task(&LoopCountPrinter, NULL);
+#ifdef DEBUG_MODE
+  // /Count the loop speed
+  RRos.push_task(&LoopSpeedometerObj, NULL);
 #endif
-
-  rros.set_error_handler_functions(&error_handler);
-  rros.set_print_handler_functions(&print_handler);
 }
 
 void loop() {
   // Round Robin scheduling
-  rros.tick();
+  RRos.tick();
 }

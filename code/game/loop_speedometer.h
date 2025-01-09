@@ -16,23 +16,19 @@ private:
   MicrosTrackType speed = 0;
 
 public:
-
   // Access the last speed measurement
   MicrosTrackType get_last_speed(){
     return speed;
   }
-
   // Set the time limit between measurements
   void set_limit(uint32_t limit) {
     this->limit = limit;
   }
-
   // Reset the time 
   void reset() {
     this->current_value = 0;
     this->accumulated_time = 0;
   }
-  
   // Tick API for OS
   void tick(MicrosTrackType micros_since_last_call,
             void *args) {
