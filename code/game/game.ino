@@ -104,5 +104,16 @@ void setup() {
 
 void loop() {
   // Round Robin scheduling
-  rros.tick();
+  //rros.tick();
+  for (int i = PIN_LED_0; i < PIN_LED_0+1; ++i) {
+    analogWrite(i, 255);
+    Serial.println(String(i) + " is HIGH");
+    delay(1000);
+    analogWrite(i, 0);
+    Serial.println(String(i) + " is LOW");
+    int buttonVal = digitalRead(PIN_BUTTON);
+    Serial.println("buttonVal is " + String(buttonVal));
+    int switchVal = digitalRead(PIN_SWITCH);
+    Serial.println("switchVal is " + String(switchVal));
+  }
 }
