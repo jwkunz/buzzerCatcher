@@ -4,7 +4,7 @@
 class LoopCountPrint : public TaskInterface {
 private:
   uint32_t current_value = 0;
-  uint32_t limit = 10000;
+  uint32_t limit = 100000;
   MicrosTrackType accumulated_time = 0;
 
 public:

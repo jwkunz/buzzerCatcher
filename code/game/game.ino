@@ -1,3 +1,4 @@
+#define VERBOSE_MODE
 #include "pin_map.h"
 #include "task_interface.h"
 #include "game_task.h"
@@ -17,7 +18,10 @@ PinDebouncer Trigger0Debouncer;
 PinDebouncer Trigger1Debouncer;
 PinDebouncer Trigger2Debouncer;
 PinDebouncer Trigger3Debouncer;
+
+#ifdef VERBOSE_MODE
 LoopCountPrint LoopCountPrinter;
+#endif
 
 // Args
 GameTask::TickArgsType GameTaskArgs;
@@ -76,7 +80,10 @@ void setup() {
   Trigger2Debouncer.set_name("Trigger 2 Debouncer");
   Trigger3Debouncer.set_name("Trigger 3 Debouncer");
   GameTasker.set_name("Game Tasker");
+
+#ifdef VERBOSE_MODE
   LoopCountPrinter.set_name("Loop Count Printer");
+#endif
 
   // Call the game task with the required IO args
   GameTask::TickArgsType GameTaskArgs = {
@@ -96,7 +103,10 @@ void setup() {
   rros.push_task(&Trigger2Debouncer, NULL);
   rros.push_task(&Trigger3Debouncer, NULL);
   rros.push_task(&GameTasker, (void *)&GameTaskArgs);
+
+#ifdef VERBOSE_MODE
   rros.push_task(&LoopCountPrinter, NULL);
+#endif
 
   rros.set_error_handler_functions(&error_handler);
   rros.set_print_handler_functions(&print_handler);
@@ -104,16 +114,5 @@ void setup() {
 
 void loop() {
   // Round Robin scheduling
-  //rros.tick();
-  for (int i = PIN_LED_0; i < PIN_LED_0+1; ++i) {
-    analogWrite(i, 255);
-    Serial.println(String(i) + " is HIGH");
-    delay(1000);
-    analogWrite(i, 0);
-    Serial.println(String(i) + " is LOW");
-    int buttonVal = digitalRead(PIN_BUTTON);
-    Serial.println("buttonVal is " + String(buttonVal));
-    int switchVal = digitalRead(PIN_SWITCH);
-    Serial.println("switchVal is " + String(switchVal));
-  }
+  rros.tick();
 }

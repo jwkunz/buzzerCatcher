@@ -24,7 +24,7 @@ public:
   }
 
   void tick(MicrosTrackType micros_since_last_call,
-       void *args) {
+            void *args) {
     // Sample
     bool current_read = digitalRead(this->pin_number);
     // If the value is not what is currently locked
@@ -33,6 +33,9 @@ public:
       this->current_micros += micros_since_last_call;
       // If deviated for long enough
       if (this->current_micros > this->micros_for_stable) {
+#ifdef VERBOSE_MODE
+        this->print("Pin changed values");
+#endif
         // Update state
         this->current_value = current_read;
         this->current_micros = 0;

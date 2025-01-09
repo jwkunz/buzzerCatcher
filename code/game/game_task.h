@@ -20,15 +20,15 @@ private:
 
   const uint8_t LED_OFF = 0x00;
   const uint8_t LED_ON = 0xFF;
-  const uint8_t LED_USER_0 = PIN_LED_0;
-  const uint8_t LED_USER_1 = PIN_LED_1;
-  const uint8_t LED_USER_2 = PIN_LED_2;
-  const uint8_t LED_USER_3 = PIN_LED_3;
-  const uint8_t LED_WAIT_ARM = PIN_LED_4;
-  const uint8_t LED_WAIT_TRIGGER = PIN_LED_5;
-  const uint8_t LED_WAIT_CLEAR = PIN_LED_6;
+  const uint8_t LED_WAIT_ARM = PIN_LED_2;
+  const uint8_t LED_WAIT_TRIGGER = PIN_LED_3;
+  const uint8_t LED_USER_0 = PIN_LED_4;
+  const uint8_t LED_USER_1 = PIN_LED_5;
+  const uint8_t LED_USER_2 = PIN_LED_6;
+  const uint8_t LED_USER_3 = PIN_LED_7;
 
-  const MicrosTrackType BUZZER_FREQ_HZ = 1000;
+
+  const MicrosTrackType BUZZER_FREQ_HZ = 2000;
   const MicrosTrackType BUZZER_HALF_PERIOD_MICROS = 1E6 / BUZZER_FREQ_HZ / 2;
   MicrosTrackType buzz_time_tracker;
   bool buzzer_value;
@@ -54,7 +54,11 @@ public:
   } TickArgsType;
 
   void tick(MicrosTrackType micros_since_last_call,
-       void *args) {
+            void *args) {
+
+    // Always show last responded
+    this->display_responded();
+
     // Default to stay in current state
     GameStateType next_state = current_state;
 
@@ -64,6 +68,9 @@ public:
       // Initialization
       case POWER_UP:
         {
+#ifdef VERBOSE_MODE
+          this->print("Game is booting up...");
+#endif
           // Set all IO low
           digitalWrite(PIN_READY, LOW);
           digitalWrite(PIN_BUZZER, LOW);
@@ -95,6 +102,7 @@ public:
       case WAIT_ARM_1:
         {
           analogWrite(LED_WAIT_ARM, LED_ON);  // Signal state
+          this->responded = 4;                // No one responded
           // Check button
           bool val = ((TickArgsType *)args)->pin_button->get_current_value();
           if (!val) {
@@ -102,6 +110,7 @@ public:
             next_state = WAIT_TRIGGER_0;
             buzz_time_tracker = 0;
             buzzer_value = false;
+            digitalWrite(PIN_READY, HIGH);  // Inform contestants to respond
           }
           break;
         }
@@ -116,6 +125,9 @@ public:
 
           // Someone responded
           if (responded) {
+
+            digitalWrite(PIN_READY, LOW);  // Inform contestants can no longer respond
+
             // Going to next state
             next_state = WAIT_TRIGGER_1;
 
@@ -135,6 +147,15 @@ public:
                 }
               }
             }
+          } else {
+            // If no one responded, check button for operator to clear
+            bool val = ((TickArgsType *)args)->pin_button->get_current_value();
+            if (val) {
+              analogWrite(LED_WAIT_TRIGGER, LED_OFF);  // No longer waiting on trigger
+              digitalWrite(PIN_READY, LOW);            // Inform contestants cannot respond
+              // Going to clear
+              next_state = WAIT_CLEAR_0;
+            }
           }
           break;
         }
@@ -142,50 +163,36 @@ public:
       case WAIT_TRIGGER_1:
         {
           analogWrite(LED_WAIT_TRIGGER, LED_ON);  // Signal state
-          this->display_responded();              // Signal the owner
 
-          // Run buzzer while the trigger is still high
-          buzz_time_tracker += micros_since_last_call;
-          if (buzz_time_tracker > BUZZER_HALF_PERIOD_MICROS) {
-            buzz_time_tracker -= BUZZER_HALF_PERIOD_MICROS;
-            digitalWrite(PIN_BUZZER, buzzer_value);
-            buzzer_value = !buzzer_value;
+          // Check switch for if sound is enabled
+          bool val = ((TickArgsType *)args)->pin_switch->get_current_value();
+          if (val) {
+            // Run buzzer while the trigger is still high
+            buzz_time_tracker += micros_since_last_call;
+            if (buzz_time_tracker > BUZZER_HALF_PERIOD_MICROS) {
+              buzz_time_tracker -= BUZZER_HALF_PERIOD_MICROS;
+              digitalWrite(PIN_BUZZER, buzzer_value);
+              buzzer_value = !buzzer_value;
+            }
           }
 
           // Look for a response is still on
           bool responded = this->get_responses((TickArgsType *)args);
 
-          // Check if all the triggers are low
+          // Check if all the triggers are low and go back to waiting to arm
           if (!responded) {
             analogWrite(LED_WAIT_TRIGGER, LED_OFF);
-            next_state = WAIT_CLEAR_0;
+            next_state = WAIT_ARM_0;
           }
           break;
         }
 
-      // Wait for the clear to go high
       case WAIT_CLEAR_0:
         {
-          analogWrite(LED_WAIT_CLEAR, LED_ON);  // Signal state
-          this->display_responded();            // Signal the owner
-
-          // Check the button state
-          bool val = ((TickArgsType *)args)->pin_button->get_current_value();
-          if (val) {
-            next_state = WAIT_CLEAR_1;
-          }
-          break;
-        }
-      // Wait for the clear to go low
-      case WAIT_CLEAR_1:
-        {
-          analogWrite(LED_WAIT_CLEAR, LED_ON);  // Signal state
-          this->display_responded();            // Signal the owner
-
-          // Check the button
+          // Check button for operator to lift clear
           bool val = ((TickArgsType *)args)->pin_button->get_current_value();
           if (!val) {
-            analogWrite(LED_WAIT_CLEAR, LED_OFF);
+            // Going to arm state
             next_state = WAIT_ARM_0;
           }
           break;
@@ -200,6 +207,11 @@ public:
           break;
         }
     }
+#ifdef VERBOSE_MODE
+    if (next_state != current_state) {
+      this->print("Game is transitioning from " + String(current_state) + " to " + String(next_state));
+    }
+#endif
     current_state = next_state;
   }
 
