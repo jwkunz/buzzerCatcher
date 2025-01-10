@@ -23,7 +23,8 @@ private:
     WAIT_ARM_1,      // Wait for the button to go low after push
     WAIT_TRIGGER_0,  // Waiting for either a response trigger or button clear
     WAIT_TRIGGER_1,  // Waiting for trigger to go low while buzzing
-    WAIT_CLEAR_0     // Wait for the button clear to go low
+    WAIT_CLEAR_0,    // Wait for the button clear to go high
+    WAIT_CLEAR_1     // Wait for the button clear to go low
   } GameStateType;
 
   // Start in the POWER_UP sequence
@@ -91,6 +92,10 @@ private:
       case WAIT_CLEAR_0:
         {
           return "WAITING TO CLEAR 0";
+        }
+      case WAIT_CLEAR_1:
+        {
+          return "WAITING TO CLEAR 1";
         }
       default:
         {
@@ -191,6 +196,11 @@ public:
             // Init buzzer variables
             buzz_time_tracker = 0;
             buzzer_value = false;
+
+            pinMode(PIN_TRIGGER_1, INPUT);
+            pinMode(PIN_TRIGGER_2, INPUT);
+            pinMode(PIN_TRIGGER_3, INPUT);
+            pinMode(PIN_TRIGGER_4, INPUT);
           }
           break;
         }
@@ -244,7 +254,7 @@ public:
               // Inform contestants cannot respond
               digitalWrite(PIN_READY, LOW);
               // Going to clear
-              next_state = WAIT_CLEAR_0;
+              next_state = WAIT_CLEAR_1;
 
 #ifdef DEBUG_MODE
               this->print("Got clear button HIGH");
@@ -278,8 +288,11 @@ public:
           if (!responded) {
             // Signal a change
             analogWrite(LED_WAIT_TRIGGER, LED_OFF);
+            // Reverse polarity and drive that trigger high for the LED
+            pinMode(PIN_TRIGGER_1 + this->last_response, OUTPUT);
+            digitalWrite(PIN_TRIGGER_1 + this->last_response, HIGH);
             // Transition
-            next_state = WAIT_ARM_0;
+            next_state = WAIT_CLEAR_0;
 
 #ifdef DEBUG_MODE
             this->print("All responses have now cleared");
@@ -287,12 +300,31 @@ public:
           }
           break;
         }
-
+      // Wait for button to go high to clear
       case WAIT_CLEAR_0:
         {
           // Check button for operator to lift clear
           bool val = ((TickArgsType *)args)->pin_button->get_current_value();
+          if (val) {
+            // Reverse polarity back drive low agaom
+            pinMode(PIN_TRIGGER_1 + this->last_response, INPUT);
+            digitalWrite(PIN_TRIGGER_1 + this->last_response, LOW);
+            // Going to arm state
+            next_state = WAIT_CLEAR_1;
+#ifdef DEBUG_MODE
+            this->print("Clear button went HIGH");
+#endif
+          }
+          break;
+        }
+
+      case WAIT_CLEAR_1:
+        {
+          // Check button for operator to lift clear
+          bool val = ((TickArgsType *)args)->pin_button->get_current_value();
           if (!val) {
+            // Display nobody again
+            this->last_response = NO_RESPONSE;
             // Going to arm state
             next_state = WAIT_ARM_0;
 #ifdef DEBUG_MODE
