@@ -49,14 +49,14 @@ public:
   }
 
   // Use this to hook up an error handler during configuration
-  void set_error_handler_functions(void (*error_handler)(String&)) {
+  void set_error_handler_functions(void (*error_handler)(const char*)) {
     for (uint8_t i = 0; i < n_active_tasks; ++i) {
       tasks[i].task_object->set_error_handler_function(error_handler);
     }
   }
 
   // Use this to hook up an print handler during configuration
-  void set_print_handler_functions(void (*print_handler)(String&)) {
+  void set_print_handler_functions(void (*print_handler)(const char*)) {
     for (uint8_t i = 0; i < n_active_tasks; ++i) {
       tasks[i].task_object->set_print_handler_function(print_handler);
     }

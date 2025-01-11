@@ -6,6 +6,8 @@
 */
 
 #define DEBUG_MODE
+
+#include "arduino.h"
 #include "pin_map.h"
 #include "task_interface.h"
 #include "game_task.h"
@@ -34,18 +36,25 @@ LoopSpeedometer LoopSpeedometerObj;
 // Args
 GameTask::TickArgsType GameTaskArgs;
 
-void error_handler(String &message) {
-  Serial.println("Error: " + message);
-  while (true) {};
+void error_handler(const char *message)
+{
+  Serial.print("ERROR->");
+  Serial.println(message);
+  while (true)
+  {
+  };
 }
 
-void print_handler(String &message) {
-  Serial.println("Print: " + message);
+void print_handler(const char *message)
+{
+  Serial.print("PRINT->");
+  Serial.println(message);
 }
 
-void setup() {
+void setup()
+{
   // Serial monitor
-  Serial.begin(250000);
+  Serial.begin(115200);
 
   // Set the pin modes
   pinMode(PIN_READY, OUTPUT);
@@ -96,18 +105,12 @@ void setup() {
 
   // Call the game task with the required IO args
   GameTask::TickArgsType GameTaskArgs = {
-    &ButtonDebouncer,
-    &SwitchDebouncer,
-    &Trigger0Debouncer,
-    &Trigger1Debouncer,
-    &Trigger2Debouncer,
-    &Trigger3Debouncer
-  };
-
-  // Printing
-  RRos.set_print_handler_functions(&print_handler);
-  // Errors
-  RRos.set_error_handler_functions(&error_handler);
+      &ButtonDebouncer,
+      &SwitchDebouncer,
+      &Trigger0Debouncer,
+      &Trigger1Debouncer,
+      &Trigger2Debouncer,
+      &Trigger3Debouncer};
 
   // Load up the scheduler
   RRos.push_task(&ButtonDebouncer, NULL);
@@ -121,10 +124,17 @@ void setup() {
 #ifdef DEBUG_MODE
   // /Count the loop speed
   RRos.push_task(&LoopSpeedometerObj, NULL);
+  print_handler("Finished hardware initialization");
 #endif
+
+  // Printing
+  RRos.set_print_handler_functions(&print_handler);
+  // Errors
+  RRos.set_error_handler_functions(&error_handler);
 }
 
-void loop() {
+void loop()
+{
   // Round Robin scheduling
   RRos.tick();
 }
