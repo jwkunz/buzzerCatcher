@@ -9,6 +9,7 @@
 #include "pin_map.h"
 #include "task_interface.h"
 #include "pin_debouncer.h"
+#include "buzzer_driver.h"
 
 // The game task inherit from the task interface
 class GameTask : public TaskInterface
@@ -122,6 +123,7 @@ public:
     PinDebouncer *trigger_1;
     PinDebouncer *trigger_2;
     PinDebouncer *trigger_3;
+    BuzzerDriver *buzzer;
   } TickArgsType;
 
   // The main tick function gets called every cycle in the operating system

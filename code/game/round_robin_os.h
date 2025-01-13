@@ -22,8 +22,11 @@ private:
   uint8_t n_active_tasks = 0;
 
 public:
+  uint8_t get_n_active_tasks(){
+      return this->n_active_tasks;
+  }
 
-// The tick API is called periodically
+  // The tick API is called periodically
   void tick() {
     for (uint8_t i = 0; i < n_active_tasks; ++i) {
       tasks[i].task_object->call_tick(tasks[i].task_args);

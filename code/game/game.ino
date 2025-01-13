@@ -13,12 +13,14 @@
 #include "game_task.h"
 #include "round_robin_os.h"
 #include "loop_speedometer.h"
+#include "buzzer_driver.h"
+#include "song_charge.h"
 
 // Determines how long is a stable value on a pin
 static const uint32_t micros_for_stable_io = 100000;
 
 // OS
-RoundRobinOS<8> RRos;
+RoundRobinOS<9> RRos;
 
 // Tasks
 GameTask GameTasker;
@@ -28,6 +30,7 @@ PinDebouncer Trigger0Debouncer;
 PinDebouncer Trigger1Debouncer;
 PinDebouncer Trigger2Debouncer;
 PinDebouncer Trigger3Debouncer;
+BuzzerDriver BuzzerDriverTask;
 
 #ifdef DEBUG_MODE
 LoopSpeedometer LoopSpeedometerObj;
@@ -90,6 +93,10 @@ void setup()
   Trigger2Debouncer.set(PIN_TRIGGER_3, micros_for_stable_io);
   Trigger3Debouncer.set(PIN_TRIGGER_4, micros_for_stable_io);
 
+  BuzzerDriverTask.set_song(song_charge, 13);
+  BuzzerDriverTask.set_active(true);
+  BuzzerDriverTask.set_repeat(true);
+
 #ifdef DEBUG_MODE
   // Give the tasks human readable names
   ButtonDebouncer.set_name("Button Debouncer");
@@ -99,7 +106,7 @@ void setup()
   Trigger2Debouncer.set_name("Trigger 2 Debouncer");
   Trigger3Debouncer.set_name("Trigger 3 Debouncer");
   GameTasker.set_name("Game Tasker");
-
+  BuzzerDriverTask.set_name("Buzzer");
   LoopSpeedometerObj.set_name("Loop Count Printer");
 #endif
 
@@ -112,6 +119,10 @@ void setup()
       &Trigger2Debouncer,
       &Trigger3Debouncer};
 
+  // Call the game task with the required IO args
+  BuzzerDriver::TickArgsType BuzzTaskArgs = {
+      &SwitchDebouncer};
+
   // Load up the scheduler
   RRos.push_task(&ButtonDebouncer, NULL);
   RRos.push_task(&SwitchDebouncer, NULL);
@@ -120,6 +131,7 @@ void setup()
   RRos.push_task(&Trigger2Debouncer, NULL);
   RRos.push_task(&Trigger3Debouncer, NULL);
   RRos.push_task(&GameTasker, (void *)&GameTaskArgs);
+  RRos.push_task(&BuzzerDriverTask, (void *)&BuzzTaskArgs);
 
 #ifdef DEBUG_MODE
   // /Count the loop speed
