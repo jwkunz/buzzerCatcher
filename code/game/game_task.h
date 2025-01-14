@@ -10,6 +10,8 @@
 #include "task_interface.h"
 #include "pin_debouncer.h"
 #include "buzzer_driver.h"
+#include "song_loading.h"
+#include "song_response.h"
 
 // The game task inherit from the task interface
 class GameTask : public TaskInterface
@@ -118,7 +120,6 @@ public:
   typedef struct
   {
     PinDebouncer *pin_button;
-    PinDebouncer *pin_switch;
     PinDebouncer *trigger_0;
     PinDebouncer *trigger_1;
     PinDebouncer *trigger_2;
@@ -147,6 +148,11 @@ public:
 #ifdef DEBUG_MODE // This only compiles if DEBUG_MODE is enabled
       this->print("Game is booting up...");
 #endif
+      // Enable song during power up
+      ((TickArgsType *)args)->buzzer->set_song(song_loading, SONG_LOADING_LENGTH);
+      ((TickArgsType *)args)->buzzer->set_repeat(false);
+      ((TickArgsType *)args)->buzzer->set_active(true);
+
       // Set all IO low
       digitalWrite(PIN_READY, LOW);
       digitalWrite(PIN_BUZZER, LOW);
@@ -263,6 +269,12 @@ public:
           }
         }
 
+        // Load response song
+        ((TickArgsType *)args)->buzzer->set_active(false);
+        ((TickArgsType *)args)->buzzer->set_song(song_response, SONG_RESPONSE_LENGTH);
+        ((TickArgsType *)args)->buzzer->set_repeat(true);
+        ((TickArgsType *)args)->buzzer->restart_song();
+
         // Going to next state
         next_state = WAIT_TRIGGER_1;
       }
@@ -292,19 +304,8 @@ public:
       // Signal the current state
       analogWrite(LED_WAIT_TRIGGER, LED_ON);
 
-      // Check switch for if sound is enabled
-      bool val = ((TickArgsType *)args)->pin_switch->get_current_value();
-      if (val)
-      {
-        // Run buzzer while the trigger is still high
-        buzz_time_tracker += micros_since_last_call;
-        if (buzz_time_tracker > BUZZER_HALF_PERIOD_MICROS)
-        {
-          buzz_time_tracker -= BUZZER_HALF_PERIOD_MICROS;
-          digitalWrite(PIN_BUZZER, buzzer_value);
-          buzzer_value = !buzzer_value;
-        }
-      }
+      // Enable song during trigger
+      ((TickArgsType *)args)->buzzer->set_active(true);
 
       // Look for if a response is still on
       bool responded = this->get_responses((TickArgsType *)args);
@@ -329,6 +330,8 @@ public:
     // Wait for button to go high to clear
     case WAIT_CLEAR_0:
     {
+      // Disable song again
+      ((TickArgsType *)args)->buzzer->set_active(false);
       // Check button for operator to lift clear
       bool val = ((TickArgsType *)args)->pin_button->get_current_value();
       if (val)

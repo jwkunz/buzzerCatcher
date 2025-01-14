@@ -1,5 +1,74 @@
+#pragma once
 #include "piano_key_definitions.h"
-static const uint8_t song_charge[13]{
+
+
+// This is the "Charge!" cadence
+#define SONG_RESPONSE_LENGTH 13
+static const uint8_t song_response[SONG_LOADING_LENGTH]{
+    // Length is 2X number of notes + 1
+
+    // Preamble
+
+    120, // Beats per minute
+
+    // Insert pairs of key number and duration
+
+    // First value in pair is the piano key (use the piano_key_definitions #defines)
+    // Second value in pair is the number beats in terms of 1/32 notes
+    // e.g. 1/32 note = 1, 1/8 note = 4, 1/4 note = 8
+    // Reccomend adding // to separate notes and using // MEASURE markings to stay organized!
+
+    // MEASURE 1
+    KEY_G_4,
+    3,
+    //
+    KEY_C_5,
+    2,
+    //
+    KEY_E_5,
+    3,
+    //
+    KEY_G_5,
+    6,
+    //
+    KEY_E_5,
+    2,
+    //
+    KEY_G_5,
+    16
+
+    // END OF SONG
+};
+
+
+/*
+// This is a simple tone
+#define SONG_RESPONSE_LENGTH 3
+static const uint8_t song_response[SONG_RESPONSE_LENGTH]{
+    // Length is 2X number of notes + 1
+
+    // Preamble
+
+    60, // Beats per minute
+
+    // Insert pairs of key number and duration
+
+    // First value in pair is the piano key (use the piano_key_definitions #defines)
+    // Second value in pair is the number beats in terms of 1/32 notes
+    // e.g. 1/32 note = 1, 1/8 note = 4, 1/4 note = 8
+    // Reccomend adding // to separate notes and using // MEASURE markings to stay organized!
+
+    // MEASURE 1
+    KEY_A_4,
+    32,
+    // END OF SONG
+};
+*/
+
+/*
+// This is a triplet beep
+#define SONG_RESPONSE_LENGTH 13
+static const uint8_t song_response[SONG_RESPONSE_LENGTH]{
     // Length is 2X number of notes + 1
 
     // Preamble
@@ -34,3 +103,4 @@ static const uint8_t song_charge[13]{
     //
     // END OF SONG
 };
+*/
