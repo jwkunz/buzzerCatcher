@@ -482,7 +482,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "buzzCatcher.step",
       "svg": "",
       "vrml": ""
     },
@@ -643,7 +643,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "exports/",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -657,6 +657,18 @@
     [
       "7ff16773-e8bc-4e88-bf37-0df499448a9a",
       "Root"
+    ],
+    [
+      "ecadb58b-0b2f-4383-a7f5-f78cf3a08328",
+      "handles"
+    ],
+    [
+      "3b35af8e-744a-4082-99bb-9c197b6f1046",
+      "motherboard"
+    ],
+    [
+      "3d067a69-5e0a-43d0-b189-2c5206fcfab7",
+      "cables"
     ]
   ],
   "text_variables": {}
